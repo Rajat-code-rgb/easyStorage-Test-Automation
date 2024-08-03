@@ -1,0 +1,56 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import time
+
+# Set up the Chrome WebDriver
+chrome_options = Options()
+# Run in headless mode for background execution (optional)
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--disable-dev-shm-usage")
+
+# Update with the path to your ChromeDriver
+service = Service(r'C:\chromedriver-win64\chromedriver.exe')
+driver = webdriver.Chrome(service=service, options=chrome_options)
+
+try:
+    postal_codes = ['SW1A 1AA', 'EH21 6UU']
+    
+    for code in postal_codes:
+        # Open the log file in append mode
+        with open("log.txt", 'a') as file:
+            file.write(f'{time.time()}\n')
+
+        # Navigate to the website
+        driver.get("https://book.easystorage.com/")
+
+        # Wait for the search input box to be present
+        input_pin_code_box = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.TAG_NAME, 'input'))
+        )
+        
+        # Clear the input box, enter the postal code, and submit
+        input_pin_code_box.clear()
+        input_pin_code_box.send_keys(code)
+        input_pin_code_box.send_keys(Keys.RETURN)
+
+        # Wait for results to load and fetch the titles of the search results
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By.CSS_SELECTOR, "h3"))
+        )
+
+        # Find all search result titles
+        search_results = driver.find_elements(By.CSS_SELECTOR, "h3")
+        for result in search_results:
+            print(result.text)
+
+except Exception as e:
+    print(f"An error occurred: {e}")
+
+finally:
+    # Ensure the browser is closed properly
+    driver.quit()
