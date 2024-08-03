@@ -28,8 +28,11 @@ try:
         input_pin_code_box.send_keys(Keys.RETURN)
 
         # Wait for results to load and fetch the titles of the search results
-        driver.implicitly_wait(100)  # Implicit wait to handle dynamic content
-
+        driver.implicitly_wait(10)  # Implicit wait to handle dynamic content
+        element = WebDriverWait(driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, "//section[@data-baseweb='card']"))
+        )
+        element.click()
         # Find all search result titles
         search_results = driver.find_elements(By.CSS_SELECTOR, "h3")
         for result in search_results:
