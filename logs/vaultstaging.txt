@@ -1,152 +1,110 @@
-2024-08-06 12:19:14 - Login successful and page loaded
-2024-08-06 12:19:24 - Create Order button interaction failed: Message: no such window: target window already closed
+2024-08-06 15:47:17 - An error occurred: 'username'
+2024-08-06 15:47:44 - Login successful and page loaded
+2024-08-06 15:47:49 - Create Order button clicked
+2024-08-06 15:48:36 - Login successful and page loaded
+2024-08-06 15:48:42 - Create Order button clicked
+2024-08-06 15:55:14 - Login successful and page loaded
+2024-08-06 15:55:19 - Create Order button clicked
+2024-08-06 16:08:57 - Login successful and page loaded
+2024-08-06 16:09:03 - Create Order button clicked
+2024-08-06 16:21:50 - Login successful and page loaded
+2024-08-06 16:21:56 - Create Order button clicked
+2024-08-06 16:24:24 - Login successful and page loaded
+2024-08-06 16:24:29 - Create Order button clicked
+2024-08-06 16:26:07 - Login successful and page loaded
+2024-08-06 16:26:13 - Create Order button clicked
+2024-08-06 16:46:07 - Login successful and page loaded
+2024-08-06 16:46:12 - Create Order button clicked
+2024-08-06 16:47:04 - Login successful and page loaded
+2024-08-06 16:47:10 - Create Order button clicked
+2024-08-06 16:48:03 - Login successful and page loaded
+2024-08-06 16:48:08 - Create Order button clicked
+2024-08-06 16:52:25 - Login successful and page loaded
+2024-08-06 16:52:30 - Create Order button clicked
+2024-08-06 16:55:36 - Login successful and page loaded
+2024-08-06 16:55:42 - Create Order button clicked
+2024-08-06 16:56:28 - Login successful and page loaded
+2024-08-06 16:56:33 - Create Order button clicked
+2024-08-06 17:01:55 - Login successful and page loaded
+2024-08-06 17:02:00 - Create Order button clicked
+2024-08-06 17:03:53 - Login successful and page loaded
+2024-08-06 17:03:58 - Create Order button clicked
+2024-08-06 17:04:56 - Login successful and page loaded
+2024-08-06 17:05:01 - Create Order button clicked
+2024-08-06 17:15:27 - Login successful and page loaded
+2024-08-06 17:15:33 - Create Order button clicked
+2024-08-06 17:17:45 - Login successful and page loaded
+2024-08-06 17:17:50 - Create Order button clicked
+2024-08-06 17:19:37 - Login successful and page loaded
+2024-08-06 17:19:42 - Create Order button clicked
+2024-08-06 17:22:20 - Login or page load failed: Message: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=127.0.6533.89)
 Stacktrace:
-	GetHandleVerifier [0x00007FF6DA619632+30946]
-	(No symbol) [0x00007FF6DA5CE3C9]
-	(No symbol) [0x00007FF6DA4C6FDA]
-	(No symbol) [0x00007FF6DA49CB85]
-	(No symbol) [0x00007FF6DA5437A7]
-	(No symbol) [0x00007FF6DA55A771]
-	(No symbol) [0x00007FF6DA53C813]
-	(No symbol) [0x00007FF6DA50A6E5]
-	(No symbol) [0x00007FF6DA50B021]
-	GetHandleVerifier [0x00007FF6DA74F83D+1301229]
-	GetHandleVerifier [0x00007FF6DA75BDB7+1351783]
-	GetHandleVerifier [0x00007FF6DA752A03+1313971]
-	GetHandleVerifier [0x00007FF6DA64DD06+245686]
-	(No symbol) [0x00007FF6DA5D758F]
-	(No symbol) [0x00007FF6DA5D3804]
-	(No symbol) [0x00007FF6DA5D3992]
-	(No symbol) [0x00007FF6DA5CA3EF]
-	BaseThreadInitThunk [0x00007FFCC8C37374+20]
-	RtlUserThreadStart [0x00007FFCCA57CC91+33]
+	GetHandleVerifier [0x00007FF657259632+30946]
+	(No symbol) [0x00007FF65720E3C9]
+	(No symbol) [0x00007FF657106FDA]
+	(No symbol) [0x00007FF6570DCB85]
+	(No symbol) [0x00007FF6571837A7]
+	(No symbol) [0x00007FF65719A771]
+	(No symbol) [0x00007FF65717C813]
+	(No symbol) [0x00007FF65714A6E5]
+	(No symbol) [0x00007FF65714B021]
+	GetHandleVerifier [0x00007FF65738F83D+1301229]
+	GetHandleVerifier [0x00007FF65739BDB7+1351783]
+	GetHandleVerifier [0x00007FF657392A03+1313971]
+	GetHandleVerifier [0x00007FF65728DD06+245686]
+	(No symbol) [0x00007FF65721758F]
+	(No symbol) [0x00007FF657213804]
+	(No symbol) [0x00007FF657213992]
+	(No symbol) [0x00007FF65720A3EF]
+	BaseThreadInitThunk [0x00007FFF5B887374+20]
+	RtlUserThreadStart [0x00007FFF5C4FCC91+33]
 
-2024-08-06 12:22:11 - Login or page load failed: Message: target frame detached
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=127.0.6533.89)
-Stacktrace:
-	GetHandleVerifier [0x00007FF6DA619632+30946]
-	(No symbol) [0x00007FF6DA5CE3C9]
-	(No symbol) [0x00007FF6DA4C6E09]
-	(No symbol) [0x00007FF6DA4AFC21]
-	(No symbol) [0x00007FF6DA4ADE84]
-	(No symbol) [0x00007FF6DA4AE46F]
-	(No symbol) [0x00007FF6DA4CB54F]
-	(No symbol) [0x00007FF6DA4CC61C]
-	(No symbol) [0x00007FF6DA4CFD31]
-	(No symbol) [0x00007FF6DA4CFDD0]
-	(No symbol) [0x00007FF6DA511F7B]
-	(No symbol) [0x00007FF6DA50FF79]
-	(No symbol) [0x00007FF6DA53CA6A]
-	(No symbol) [0x00007FF6DA50BBB6]
-	(No symbol) [0x00007FF6DA53CC80]
-	(No symbol) [0x00007FF6DA55B041]
-	(No symbol) [0x00007FF6DA53C813]
-	(No symbol) [0x00007FF6DA50A6E5]
-	(No symbol) [0x00007FF6DA50B021]
-	GetHandleVerifier [0x00007FF6DA74F83D+1301229]
-	GetHandleVerifier [0x00007FF6DA75BDB7+1351783]
-	GetHandleVerifier [0x00007FF6DA752A03+1313971]
-	GetHandleVerifier [0x00007FF6DA64DD06+245686]
-	(No symbol) [0x00007FF6DA5D758F]
-	(No symbol) [0x00007FF6DA5D3804]
-	(No symbol) [0x00007FF6DA5D3992]
-	(No symbol) [0x00007FF6DA5CA3EF]
-	BaseThreadInitThunk [0x00007FFCC8C37374+20]
-	RtlUserThreadStart [0x00007FFCCA57CC91+33]
-
-2024-08-06 12:31:59 - Login successful and page loaded
-2024-08-06 12:32:09 - Create Order button interaction failed: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.89)
-Stacktrace:
-	GetHandleVerifier [0x00007FF6DA619632+30946]
-	(No symbol) [0x00007FF6DA5CE3C9]
-	(No symbol) [0x00007FF6DA4C6FDA]
-	(No symbol) [0x00007FF6DA49CB85]
-	(No symbol) [0x00007FF6DA5437A7]
-	(No symbol) [0x00007FF6DA55A771]
-	(No symbol) [0x00007FF6DA53C813]
-	(No symbol) [0x00007FF6DA50A6E5]
-	(No symbol) [0x00007FF6DA50B021]
-	GetHandleVerifier [0x00007FF6DA74F83D+1301229]
-	GetHandleVerifier [0x00007FF6DA75BDB7+1351783]
-	GetHandleVerifier [0x00007FF6DA752A03+1313971]
-	GetHandleVerifier [0x00007FF6DA64DD06+245686]
-	(No symbol) [0x00007FF6DA5D758F]
-	(No symbol) [0x00007FF6DA5D3804]
-	(No symbol) [0x00007FF6DA5D3992]
-	(No symbol) [0x00007FF6DA5CA3EF]
-	BaseThreadInitThunk [0x00007FFCC8C37374+20]
-	RtlUserThreadStart [0x00007FFCCA57CC91+33]
-
-2024-08-06 12:32:42 - Login successful and page loaded
-2024-08-06 12:32:52 - Create Order button clicked
-2024-08-06 12:33:34 - Login successful and page loaded
-2024-08-06 12:33:44 - Create Order button clicked
-2024-08-06 12:40:15 - Login successful and page loaded
-2024-08-06 12:40:25 - Create Order button clicked
-2024-08-06 12:41:06 - Login successful and page loaded
-2024-08-06 12:41:17 - Create Order button clicked
-2024-08-06 12:47:38 - Login successful and page loaded
-2024-08-06 12:47:48 - Create Order button clicked
-2024-08-06 12:49:13 - An error occurred: too many values to unpack (expected 2)
-2024-08-06 12:50:12 - Login successful and page loaded
-2024-08-06 12:50:23 - Create Order button clicked
-2024-08-06 12:57:59 - An error occurred: 'list' object has no attribute 'push'
-2024-08-06 12:58:29 - Login successful and page loaded
-2024-08-06 13:04:02 - An error occurred: 'username'
-2024-08-06 13:07:17 - Login or page load failed: Message: 
-
-2024-08-06 13:07:34 - Create Order button interaction failed: Message: 
-Stacktrace:
-	GetHandleVerifier [0x00007FF6DA619632+30946]
-	(No symbol) [0x00007FF6DA5CE3C9]
-	(No symbol) [0x00007FF6DA4C6FDA]
-	(No symbol) [0x00007FF6DA51822C]
-	(No symbol) [0x00007FF6DA51850C]
-	(No symbol) [0x00007FF6DA55DCB7]
-	(No symbol) [0x00007FF6DA53CAAF]
-	(No symbol) [0x00007FF6DA55B041]
-	(No symbol) [0x00007FF6DA53C813]
-	(No symbol) [0x00007FF6DA50A6E5]
-	(No symbol) [0x00007FF6DA50B021]
-	GetHandleVerifier [0x00007FF6DA74F83D+1301229]
-	GetHandleVerifier [0x00007FF6DA75BDB7+1351783]
-	GetHandleVerifier [0x00007FF6DA752A03+1313971]
-	GetHandleVerifier [0x00007FF6DA64DD06+245686]
-	(No symbol) [0x00007FF6DA5D758F]
-	(No symbol) [0x00007FF6DA5D3804]
-	(No symbol) [0x00007FF6DA5D3992]
-	(No symbol) [0x00007FF6DA5CA3EF]
-	BaseThreadInitThunk [0x00007FFCC8C37374+20]
-	RtlUserThreadStart [0x00007FFCCA57CC91+33]
-
-2024-08-06 13:08:31 - Login or page load failed: Message: 
-
-2024-08-06 13:08:46 - Create Order button interaction failed: Message: 
-Stacktrace:
-	GetHandleVerifier [0x00007FF6DA619632+30946]
-	(No symbol) [0x00007FF6DA5CE3C9]
-	(No symbol) [0x00007FF6DA4C6FDA]
-	(No symbol) [0x00007FF6DA51822C]
-	(No symbol) [0x00007FF6DA51850C]
-	(No symbol) [0x00007FF6DA55DCB7]
-	(No symbol) [0x00007FF6DA53CAAF]
-	(No symbol) [0x00007FF6DA55B041]
-	(No symbol) [0x00007FF6DA53C813]
-	(No symbol) [0x00007FF6DA50A6E5]
-	(No symbol) [0x00007FF6DA50B021]
-	GetHandleVerifier [0x00007FF6DA74F83D+1301229]
-	GetHandleVerifier [0x00007FF6DA75BDB7+1351783]
-	GetHandleVerifier [0x00007FF6DA752A03+1313971]
-	GetHandleVerifier [0x00007FF6DA64DD06+245686]
-	(No symbol) [0x00007FF6DA5D758F]
-	(No symbol) [0x00007FF6DA5D3804]
-	(No symbol) [0x00007FF6DA5D3992]
-	(No symbol) [0x00007FF6DA5CA3EF]
-	BaseThreadInitThunk [0x00007FFCC8C37374+20]
-	RtlUserThreadStart [0x00007FFCCA57CC91+33]
-
+2024-08-06 17:22:49 - Login successful and page loaded
+2024-08-06 17:22:54 - Create Order button clicked
+2024-08-06 17:24:59 - Login successful and page loaded
+2024-08-06 17:25:04 - Create Order button clicked
+2024-08-06 17:25:40 - Login successful and page loaded
+2024-08-06 17:25:45 - Create Order button clicked
+2024-08-06 17:26:44 - Login successful and page loaded
+2024-08-06 17:26:50 - Create Order button clicked
+2024-08-06 17:27:48 - Login successful and page loaded
+2024-08-06 17:27:53 - Create Order button clicked
+2024-08-06 17:28:40 - Login successful and page loaded
+2024-08-06 17:28:45 - Create Order button clicked
+2024-08-06 17:29:12 - Login successful and page loaded
+2024-08-06 17:29:18 - Create Order button clicked
+2024-08-06 17:30:16 - Login successful and page loaded
+2024-08-06 17:30:22 - Create Order button clicked
+2024-08-06 17:33:06 - Login successful and page loaded
+2024-08-06 17:33:11 - Create Order button clicked
+2024-08-06 17:33:59 - Login successful and page loaded
+2024-08-06 17:34:04 - Create Order button clicked
+2024-08-06 17:35:48 - Login successful and page loaded
+2024-08-06 17:35:53 - Create Order button clicked
+2024-08-06 17:38:39 - Login successful and page loaded
+2024-08-06 17:38:44 - Create Order button clicked
+2024-08-06 17:41:14 - Login successful and page loaded
+2024-08-06 17:41:19 - Create Order button clicked
+2024-08-06 17:45:00 - Login successful and page loaded
+2024-08-06 17:45:05 - Create Order button clicked
+2024-08-06 17:50:08 - Login successful and page loaded
+2024-08-06 17:50:14 - Create Order button clicked
+2024-08-06 17:51:48 - Login successful and page loaded
+2024-08-06 17:51:53 - Create Order button clicked
+2024-08-06 17:54:34 - Login successful and page loaded
+2024-08-06 17:54:39 - Create Order button clicked
+2024-08-06 17:55:15 - Login successful and page loaded
+2024-08-06 17:55:20 - Create Order button clicked
+2024-08-06 17:56:11 - Login successful and page loaded
+2024-08-06 17:56:17 - Create Order button clicked
+2024-08-06 17:57:30 - Login successful and page loaded
+2024-08-06 17:57:35 - Create Order button clicked
+2024-08-06 17:57:35 - An error occurred: search_contact() missing 1 required positional argument: 'driver'
+2024-08-06 17:58:02 - Login successful and page loaded
+2024-08-06 17:58:07 - Create Order button clicked
+2024-08-06 18:00:52 - Login successful and page loaded
+2024-08-06 18:00:57 - Create Order button clicked
+2024-08-06 18:06:59 - Login successful and page loaded
+2024-08-06 18:07:05 - Create Order button clicked
