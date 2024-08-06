@@ -1,0 +1,152 @@
+2024-08-06 12:19:14 - Login successful and page loaded
+2024-08-06 12:19:24 - Create Order button interaction failed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DA619632+30946]
+	(No symbol) [0x00007FF6DA5CE3C9]
+	(No symbol) [0x00007FF6DA4C6FDA]
+	(No symbol) [0x00007FF6DA49CB85]
+	(No symbol) [0x00007FF6DA5437A7]
+	(No symbol) [0x00007FF6DA55A771]
+	(No symbol) [0x00007FF6DA53C813]
+	(No symbol) [0x00007FF6DA50A6E5]
+	(No symbol) [0x00007FF6DA50B021]
+	GetHandleVerifier [0x00007FF6DA74F83D+1301229]
+	GetHandleVerifier [0x00007FF6DA75BDB7+1351783]
+	GetHandleVerifier [0x00007FF6DA752A03+1313971]
+	GetHandleVerifier [0x00007FF6DA64DD06+245686]
+	(No symbol) [0x00007FF6DA5D758F]
+	(No symbol) [0x00007FF6DA5D3804]
+	(No symbol) [0x00007FF6DA5D3992]
+	(No symbol) [0x00007FF6DA5CA3EF]
+	BaseThreadInitThunk [0x00007FFCC8C37374+20]
+	RtlUserThreadStart [0x00007FFCCA57CC91+33]
+
+2024-08-06 12:22:11 - Login or page load failed: Message: target frame detached
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DA619632+30946]
+	(No symbol) [0x00007FF6DA5CE3C9]
+	(No symbol) [0x00007FF6DA4C6E09]
+	(No symbol) [0x00007FF6DA4AFC21]
+	(No symbol) [0x00007FF6DA4ADE84]
+	(No symbol) [0x00007FF6DA4AE46F]
+	(No symbol) [0x00007FF6DA4CB54F]
+	(No symbol) [0x00007FF6DA4CC61C]
+	(No symbol) [0x00007FF6DA4CFD31]
+	(No symbol) [0x00007FF6DA4CFDD0]
+	(No symbol) [0x00007FF6DA511F7B]
+	(No symbol) [0x00007FF6DA50FF79]
+	(No symbol) [0x00007FF6DA53CA6A]
+	(No symbol) [0x00007FF6DA50BBB6]
+	(No symbol) [0x00007FF6DA53CC80]
+	(No symbol) [0x00007FF6DA55B041]
+	(No symbol) [0x00007FF6DA53C813]
+	(No symbol) [0x00007FF6DA50A6E5]
+	(No symbol) [0x00007FF6DA50B021]
+	GetHandleVerifier [0x00007FF6DA74F83D+1301229]
+	GetHandleVerifier [0x00007FF6DA75BDB7+1351783]
+	GetHandleVerifier [0x00007FF6DA752A03+1313971]
+	GetHandleVerifier [0x00007FF6DA64DD06+245686]
+	(No symbol) [0x00007FF6DA5D758F]
+	(No symbol) [0x00007FF6DA5D3804]
+	(No symbol) [0x00007FF6DA5D3992]
+	(No symbol) [0x00007FF6DA5CA3EF]
+	BaseThreadInitThunk [0x00007FFCC8C37374+20]
+	RtlUserThreadStart [0x00007FFCCA57CC91+33]
+
+2024-08-06 12:31:59 - Login successful and page loaded
+2024-08-06 12:32:09 - Create Order button interaction failed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DA619632+30946]
+	(No symbol) [0x00007FF6DA5CE3C9]
+	(No symbol) [0x00007FF6DA4C6FDA]
+	(No symbol) [0x00007FF6DA49CB85]
+	(No symbol) [0x00007FF6DA5437A7]
+	(No symbol) [0x00007FF6DA55A771]
+	(No symbol) [0x00007FF6DA53C813]
+	(No symbol) [0x00007FF6DA50A6E5]
+	(No symbol) [0x00007FF6DA50B021]
+	GetHandleVerifier [0x00007FF6DA74F83D+1301229]
+	GetHandleVerifier [0x00007FF6DA75BDB7+1351783]
+	GetHandleVerifier [0x00007FF6DA752A03+1313971]
+	GetHandleVerifier [0x00007FF6DA64DD06+245686]
+	(No symbol) [0x00007FF6DA5D758F]
+	(No symbol) [0x00007FF6DA5D3804]
+	(No symbol) [0x00007FF6DA5D3992]
+	(No symbol) [0x00007FF6DA5CA3EF]
+	BaseThreadInitThunk [0x00007FFCC8C37374+20]
+	RtlUserThreadStart [0x00007FFCCA57CC91+33]
+
+2024-08-06 12:32:42 - Login successful and page loaded
+2024-08-06 12:32:52 - Create Order button clicked
+2024-08-06 12:33:34 - Login successful and page loaded
+2024-08-06 12:33:44 - Create Order button clicked
+2024-08-06 12:40:15 - Login successful and page loaded
+2024-08-06 12:40:25 - Create Order button clicked
+2024-08-06 12:41:06 - Login successful and page loaded
+2024-08-06 12:41:17 - Create Order button clicked
+2024-08-06 12:47:38 - Login successful and page loaded
+2024-08-06 12:47:48 - Create Order button clicked
+2024-08-06 12:49:13 - An error occurred: too many values to unpack (expected 2)
+2024-08-06 12:50:12 - Login successful and page loaded
+2024-08-06 12:50:23 - Create Order button clicked
+2024-08-06 12:57:59 - An error occurred: 'list' object has no attribute 'push'
+2024-08-06 12:58:29 - Login successful and page loaded
+2024-08-06 13:04:02 - An error occurred: 'username'
+2024-08-06 13:07:17 - Login or page load failed: Message: 
+
+2024-08-06 13:07:34 - Create Order button interaction failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DA619632+30946]
+	(No symbol) [0x00007FF6DA5CE3C9]
+	(No symbol) [0x00007FF6DA4C6FDA]
+	(No symbol) [0x00007FF6DA51822C]
+	(No symbol) [0x00007FF6DA51850C]
+	(No symbol) [0x00007FF6DA55DCB7]
+	(No symbol) [0x00007FF6DA53CAAF]
+	(No symbol) [0x00007FF6DA55B041]
+	(No symbol) [0x00007FF6DA53C813]
+	(No symbol) [0x00007FF6DA50A6E5]
+	(No symbol) [0x00007FF6DA50B021]
+	GetHandleVerifier [0x00007FF6DA74F83D+1301229]
+	GetHandleVerifier [0x00007FF6DA75BDB7+1351783]
+	GetHandleVerifier [0x00007FF6DA752A03+1313971]
+	GetHandleVerifier [0x00007FF6DA64DD06+245686]
+	(No symbol) [0x00007FF6DA5D758F]
+	(No symbol) [0x00007FF6DA5D3804]
+	(No symbol) [0x00007FF6DA5D3992]
+	(No symbol) [0x00007FF6DA5CA3EF]
+	BaseThreadInitThunk [0x00007FFCC8C37374+20]
+	RtlUserThreadStart [0x00007FFCCA57CC91+33]
+
+2024-08-06 13:08:31 - Login or page load failed: Message: 
+
+2024-08-06 13:08:46 - Create Order button interaction failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DA619632+30946]
+	(No symbol) [0x00007FF6DA5CE3C9]
+	(No symbol) [0x00007FF6DA4C6FDA]
+	(No symbol) [0x00007FF6DA51822C]
+	(No symbol) [0x00007FF6DA51850C]
+	(No symbol) [0x00007FF6DA55DCB7]
+	(No symbol) [0x00007FF6DA53CAAF]
+	(No symbol) [0x00007FF6DA55B041]
+	(No symbol) [0x00007FF6DA53C813]
+	(No symbol) [0x00007FF6DA50A6E5]
+	(No symbol) [0x00007FF6DA50B021]
+	GetHandleVerifier [0x00007FF6DA74F83D+1301229]
+	GetHandleVerifier [0x00007FF6DA75BDB7+1351783]
+	GetHandleVerifier [0x00007FF6DA752A03+1313971]
+	GetHandleVerifier [0x00007FF6DA64DD06+245686]
+	(No symbol) [0x00007FF6DA5D758F]
+	(No symbol) [0x00007FF6DA5D3804]
+	(No symbol) [0x00007FF6DA5D3992]
+	(No symbol) [0x00007FF6DA5CA3EF]
+	BaseThreadInitThunk [0x00007FFCC8C37374+20]
+	RtlUserThreadStart [0x00007FFCCA57CC91+33]
+
