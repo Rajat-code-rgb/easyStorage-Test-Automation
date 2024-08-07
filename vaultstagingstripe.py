@@ -23,6 +23,9 @@ TESTING_URL = os.environ.get("TESTING_URL")
 TEST_CASES_PATH = os.environ.get("TEST_CASES_PATH")
 LOGIN_FILE_NAME = os.environ.get("LOGIN_FILE_NAME")
 
+""" NECESSARY SETTINGS"""
+ADD_USER = True
+
 
 # Ensure LOG_FOLDER_NAME and LOG_FILE_NAME are not None
 if not LOG_FOLDER_NAME or not LOG_FILE_NAME:
@@ -30,7 +33,57 @@ if not LOG_FOLDER_NAME or not LOG_FILE_NAME:
 
 LOG_DESTINATION = join(dirname(__file__), LOG_FOLDER_NAME)
 LOG_PATH = join(LOG_DESTINATION, LOG_FILE_NAME)
+
+"""Test Cases"""
 AUTHENTICATION = []
+ADD_USER_DETAILS = [
+    {
+        "first_name": "Emily",
+        "last_name": "Johnson",
+        "email": "emily.johnson@example.com",
+        "mobile_number": "+447912345678",
+        "postal_code": "E1 6AN",
+        "city": "London",
+        "franchise_id": "F123456"
+    },
+    {
+        "first_name": "James",
+        "last_name": "Smith",
+        "email": "james.smith@example.com",
+        "mobile_number": "+447861234567",
+        "postal_code": "SW1A 1AA",
+        "city": "London",
+        "franchise_id": "F654321"
+    },
+    {
+        "first_name": "Olivia",
+        "last_name": "Williams",
+        "email": "olivia.williams@example.com",
+        "mobile_number": "+447790123456",
+        "postal_code": "W1A 1AA",
+        "city": "London",
+        "franchise_id": "F789456"
+    },
+    {
+        "first_name": "Liam",
+        "last_name": "Brown",
+        "email": "liam.brown@example.com",
+        "mobile_number": "+447700987654",
+        "postal_code": "N1 6EU",
+        "city": "London",
+        "franchise_id": "F321654"
+    },
+    {
+        "first_name": "Sophia",
+        "last_name": "Taylor",
+        "email": "sophia.taylor@example.com",
+        "mobile_number": "+447911234567",
+        "postal_code": "SE1 9SG",
+        "city": "London",
+        "franchise_id": "F987123"
+    }
+]
+
 
 # Set up the Chrome WebDriver
 chrome_options = Options()
@@ -95,10 +148,39 @@ def login(username, password):
 def add_user():
     """Click on edit icon beside Contact Details to add user"""
     try:
-        add_user_dialog_button = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//span[@class='symbol-label']//button[@class='btn-link']"))
-        )
+        add_user_dialog_button = driver.find_element(By.XPATH, "//span[@class='symbol-label pointer']//button[@class='btn btn-link']")
         add_user_dialog_button.click()
+        print("Add user button is clicked")
+
+        # Getting Necessary Fields
+        first_name_input = driver.find_element(By.NAME,"first_name")
+        last_name_input =  driver.find_element(By.NAME,"last_name")
+        email_input =  driver.find_element(By.NAME,"last_name")
+        mobile_number_input =  driver.find_element(By.XPATH,"//input[@type ='tel']")
+        postal_code_input =  driver.find_element(By.NAME,"postcode")
+        # city_input =  driver.find_element(By.NAME,"city")
+        # franchise_input = driver.find_element(By.NAME,"franchise_id")
+        # Save Button
+        save_button = driver.find_element(By.XPATH, "//button[contains(text(),'Save')]")
+
+        # Enter Data in each input box
+        data = ADD_USER_DETAILS[0]
+        first_name_input.send_keys(data["first_name"])
+        last_name_input.send_keys(data["last_name"])
+        email_input.send_keys(data["email"])
+        mobile_number_input.send_keys(data["mobile_number"])
+        postal_code_input.send_keys(data["postal_code"])
+        print("Is problen")
+        # city_input.send_keys(data["city"])
+        print("Not pROBLEM")
+
+        save_button.click()
+
+
+
+
+
+        time.sleep(10)
     except Exception:
         print("Failed to find the add user button within the timeout period")
 
@@ -175,9 +257,13 @@ try:
         # Maximize the browser window
         driver.maximize_window()
         login(credentials["username"], credentials["password"])
-        time.sleep(5)  # Consider using WebDriverWait here instead of sleep
+        # time.sleep(5)  # Consider using WebDriverWait here instead of sleep
         create_order()
-        search_contact()
+        time.sleep(5)
+        if(ADD_USER):
+            add_user()
+        
+        # search_contact()
         time.sleep(5)  # Consider using WebDriverWait here instead of sleep
 
 except Exception as e:
