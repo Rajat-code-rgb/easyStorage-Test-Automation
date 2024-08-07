@@ -5,11 +5,14 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from dotenv import load_dotenv
 import pandas as pd
+from components.add_Storage_items import data as living_room_data
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
 dotenv_path = join(dirname(__file__), ".env")
 load_dotenv(dotenv_path)
@@ -22,10 +25,22 @@ LOG_FILE_NAME = os.environ.get("LOG_FILE")
 TESTING_URL = os.environ.get("TESTING_URL")
 TEST_CASES_PATH = os.environ.get("TEST_CASES_PATH")
 LOGIN_FILE_NAME = os.environ.get("LOGIN_FILE_NAME")
+ADD_STORAGE_FILE_NAME = os.environ.get("ADD_STORAGE_FILE_NAME")
 
 """ NECESSARY SETTINGS"""
-ADD_USER = True
+ADD_USER = False
+PLAN = "First-Class" # 'Economy-POD' , 'POD' , 'First-Class'
+# For now it is HARDCODED later will be autofetched from CSV file
+ADD_STORAGE_SETTINGS = {
+    "BEDROOM": True,
+    "LIVING ROOM":True,
+    "KITCHEN":True,
+    "Office":True,
+    "Garden-Garage":False,
+    "OTHER":True,
+    "PRESETS":False,
 
+}
 
 # Ensure LOG_FOLDER_NAME and LOG_FILE_NAME are not None
 if not LOG_FOLDER_NAME or not LOG_FILE_NAME:
@@ -83,6 +98,7 @@ ADD_USER_DETAILS = [
         "franchise_id": "F987123"
     }
 ]
+STORAGE_TYPE ={}
 
 
 # Set up the Chrome WebDriver
@@ -101,7 +117,20 @@ def get_test_cases():
     for username, password in zip(usernames, passwords):
         if(username and password):
             AUTHENTICATION.append({"username": username, "password":password})
-    print(AUTHENTICATION)
+    """For imporing Add Storage options"""
+    
+    # Load the Excel file with all sheets
+    df = pd.read_excel(join(TEST_CASES_PATH,ADD_STORAGE_FILE_NAME), sheet_name=None) 
+    # Iterate over the sheets and print their names and content
+    for sheet_name, sheet_data in df.items():
+        categories=[]
+        for type_, quantity in zip(sheet_data["Type"], sheet_data["Quantity"]):
+            categories.append({
+                "Type":type_,
+                "Quantity":quantity
+            })
+        STORAGE_TYPE[sheet_name]=categories
+
     
 def log(msg):
     """Check if the logs folder exists if not create one"""
@@ -145,6 +174,8 @@ def login(username, password):
         print(f"Login or page load failed: {e}")
 
 
+
+# Currently under progress
 def add_user():
     """Click on edit icon beside Contact Details to add user"""
     try:
@@ -155,7 +186,7 @@ def add_user():
         # Getting Necessary Fields
         first_name_input = driver.find_element(By.NAME,"first_name")
         last_name_input =  driver.find_element(By.NAME,"last_name")
-        email_input =  driver.find_element(By.NAME,"last_name")
+        email_input =  driver.find_element(By.XPATH,"//div[@class='col-10 form-groupB w-100']//input[@name = 'name']")
         mobile_number_input =  driver.find_element(By.XPATH,"//input[@type ='tel']")
         postal_code_input =  driver.find_element(By.NAME,"postcode")
         # city_input =  driver.find_element(By.NAME,"city")
@@ -170,16 +201,8 @@ def add_user():
         email_input.send_keys(data["email"])
         mobile_number_input.send_keys(data["mobile_number"])
         postal_code_input.send_keys(data["postal_code"])
-        print("Is problen")
         # city_input.send_keys(data["city"])
-        print("Not pROBLEM")
-
         save_button.click()
-
-
-
-
-
         time.sleep(10)
     except Exception:
         print("Failed to find the add user button within the timeout period")
@@ -233,7 +256,7 @@ def search_contact():
         
         # find the pod option and click it 
         pod_radio_button = driver.find_element(By.XPATH, "//input[@type='radio' and @value='pod']")
-
+        time.sleep(5)
         print(pod_radio_button)
         pod_radio_button.click()
 
@@ -248,6 +271,84 @@ def search_contact():
     except Exception as e:
         print(f"An error occurred: {e}")
 
+def select_plan(PLAN):
+
+    if PLAN == 'Economy-POD':
+        print(f"Plan Selected : ${PLAN}")
+        button = driver.find_element(By.XPATH, "//input[@value = 'Economy-POD' ]")
+
+    if PLAN == 'POD':
+        print(f"Plan Selected : ${PLAN}")
+        button = driver.find_element(By.XPATH, "//input[@value = 'POD' ]")
+
+    if PLAN == 'First-Class':
+        print(f"Plan Selected : ${PLAN}")
+        button = driver.find_element(By.XPATH, "//input[@value = 'First-Class' ]")
+
+    button.click()
+    time.sleep(10)
+
+
+
+
+
+def add_storage_items():
+    def select_tab(tab_name):
+        tab = driver.find_element(By.XPATH,f"//a[contains(text(),'{tab_name}')]")
+        tab.click()
+
+    def get_item(selection_name):
+        """To select living room item """
+        try:
+            item = driver.find_element(By.XPATH, f"//strong[contains(text(),'{selection_name}')]/ancestor::div[2]")
+            actions = ActionChains(driver)
+            # Hover over the element
+            actions.move_to_element(item).perform()
+            element = driver.find_element(By.XPATH, f"//strong[contains(text(),'{selection_name}')]/ancestor::div[contains(@class,'ItemsSelector__FurnitureDescription-sc-1y86vk7-8')]/preceding-sibling::div[1]//div//span[contains(@class, 'ta-add')]")
+            return element
+        except:
+            return None
+
+    def add_items():
+        for item_key in ADD_STORAGE_SETTINGS.keys():
+            time.sleep(5)
+            
+            # Check if the key exists in ADD_STORAGE_SETTINGS
+            if ADD_STORAGE_SETTINGS.get(item_key) == True:
+                select_tab(item_key)
+                
+                for item in STORAGE_TYPE.get(item_key, []):
+                    selected_option = get_item(item["Type"])
+                    if(selected_option== None):
+                        continue
+                    
+                    try:
+                        quantity = int(item["Quantity"])
+                        for _ in range(quantity):
+                            selected_option.click()
+                    except ValueError:
+                        print(f"Invalid quantity value: {item['Quantity']}")
+
+
+    add_button = driver.find_element(By.XPATH, "//button[contains(text(), 'Add/Edit Storage Items')]")
+    add_button.click()
+    time.sleep(5)
+
+
+    try:
+        total_tabs= ["BEDROOM" ,"LIVING ROOM" , "KITCHEN" , "Office" ,"Garden / Garage" , "OTHER" , "PRESETS"]
+        """ Call add_items() to add items in storage"""
+        add_items()
+        time.sleep(5)
+        calculate_button = driver.find_element(By.XPATH , "//div[contains(text(), 'CALCULATE')]")
+        calculate_button.click()
+        time.sleep(10)
+        book_button = driver.find_element(By.XPATH, "//a[contains(text(),'Book')]")
+        book_button.click()
+        time.sleep(5)
+
+    except TimeoutException:
+        print("Element not found within the given time.")
 
 try:
     get_test_cases()
@@ -262,9 +363,12 @@ try:
         time.sleep(5)
         if(ADD_USER):
             add_user()
+        search_contact()
+
+        select_plan(PLAN)
+        add_storage_items()
         
-        # search_contact()
-        time.sleep(5)  # Consider using WebDriverWait here instead of sleep
+        time.sleep(10)  # Consider using WebDriverWait here instead of sleep
 
 except Exception as e:
     log(f"An error occurred: {e}")
