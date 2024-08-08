@@ -11,7 +11,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from dotenv import load_dotenv
 import pandas as pd
-from components.add_Storage_items import data as living_room_data
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
 dotenv_path = join(dirname(__file__), ".env")
@@ -29,15 +28,19 @@ ADD_STORAGE_FILE_NAME = os.environ.get("ADD_STORAGE_FILE_NAME")
 
 """ NECESSARY SETTINGS"""
 ADD_USER = False
-PLAN = "First-Class" # 'Economy-POD' , 'POD' , 'First-Class'
+SELECTED_DAY = '15'
+# SELECTED_TIME = '10'
+CONTAINER_TYPE = "pod" # 'container' or 'pod'
+PAYMENT_TYPE = "CARD"
+PLAN = "POD" # 'Economy-POD' , 'POD' , 'First-Class'
 # For now it is HARDCODED later will be autofetched from CSV file
 ADD_STORAGE_SETTINGS = {
     "BEDROOM": True,
-    "LIVING ROOM":True,
-    "KITCHEN":True,
-    "Office":True,
+    "LIVING ROOM":False,
+    "KITCHEN":False,
+    "Office":False,
     "Garden-Garage":False,
-    "OTHER":True,
+    "OTHER":False,
     "PRESETS":False,
 
 }
@@ -51,12 +54,13 @@ LOG_PATH = join(LOG_DESTINATION, LOG_FILE_NAME)
 
 """Test Cases"""
 AUTHENTICATION = []
+USERS_TO_ADD = 10
 ADD_USER_DETAILS = [
     {
         "first_name": "Emily",
         "last_name": "Johnson",
         "email": "emily.johnson@example.com",
-        "mobile_number": "+447912345678",
+        "mobile_number": "7912345678",
         "postal_code": "E1 6AN",
         "city": "London",
         "franchise_id": "F123456"
@@ -65,7 +69,7 @@ ADD_USER_DETAILS = [
         "first_name": "James",
         "last_name": "Smith",
         "email": "james.smith@example.com",
-        "mobile_number": "+447861234567",
+        "mobile_number": "7861234567",
         "postal_code": "SW1A 1AA",
         "city": "London",
         "franchise_id": "F654321"
@@ -74,7 +78,7 @@ ADD_USER_DETAILS = [
         "first_name": "Olivia",
         "last_name": "Williams",
         "email": "olivia.williams@example.com",
-        "mobile_number": "+447790123456",
+        "mobile_number": "7790123456",
         "postal_code": "W1A 1AA",
         "city": "London",
         "franchise_id": "F789456"
@@ -83,7 +87,7 @@ ADD_USER_DETAILS = [
         "first_name": "Liam",
         "last_name": "Brown",
         "email": "liam.brown@example.com",
-        "mobile_number": "+447700987654",
+        "mobile_number": "7700987654",
         "postal_code": "N1 6EU",
         "city": "London",
         "franchise_id": "F321654"
@@ -92,7 +96,7 @@ ADD_USER_DETAILS = [
         "first_name": "Sophia",
         "last_name": "Taylor",
         "email": "sophia.taylor@example.com",
-        "mobile_number": "+447911234567",
+        "mobile_number": "7911234567",
         "postal_code": "SE1 9SG",
         "city": "London",
         "franchise_id": "F987123"
@@ -175,37 +179,88 @@ def login(username, password):
 
 
 
-# Currently under progress
 def add_user():
     """Click on edit icon beside Contact Details to add user"""
     try:
-        add_user_dialog_button = driver.find_element(By.XPATH, "//span[@class='symbol-label pointer']//button[@class='btn btn-link']")
-        add_user_dialog_button.click()
-        print("Add user button is clicked")
+        for i in ADD_USER_DETAILS:
+            # Wait for and interact with the search bar
+            search_bar = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.ID, 'controllable-states-demo'))
+            )
+            search_bar.clear()
+            search_bar.send_keys(i["email"])
+            print("Search bar value set.")
 
-        # Getting Necessary Fields
-        first_name_input = driver.find_element(By.NAME,"first_name")
-        last_name_input =  driver.find_element(By.NAME,"last_name")
-        email_input =  driver.find_element(By.XPATH,"//div[@class='col-10 form-groupB w-100']//input[@name = 'name']")
-        mobile_number_input =  driver.find_element(By.XPATH,"//input[@type ='tel']")
-        postal_code_input =  driver.find_element(By.NAME,"postcode")
-        # city_input =  driver.find_element(By.NAME,"city")
-        # franchise_input = driver.find_element(By.NAME,"franchise_id")
-        # Save Button
-        save_button = driver.find_element(By.XPATH, "//button[contains(text(),'Save')]")
+            # Wait for and interact with the dropdown
+            WebDriverWait(driver, 10).until(
+                EC.visibility_of_element_located((By.CSS_SELECTOR, '.MuiAutocomplete-popper'))
+            )
+            print("Dropdown is visible.")
+            try:
+                first_item = WebDriverWait(driver, 10).until(
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, '.MuiAutocomplete-option'))
+                )
+                print("First item is clickable.")
+            except:
+                item_not_found = True
 
-        # Enter Data in each input box
-        data = ADD_USER_DETAILS[0]
-        first_name_input.send_keys(data["first_name"])
-        last_name_input.send_keys(data["last_name"])
-        email_input.send_keys(data["email"])
-        mobile_number_input.send_keys(data["mobile_number"])
-        postal_code_input.send_keys(data["postal_code"])
-        # city_input.send_keys(data["city"])
-        save_button.click()
-        time.sleep(10)
-    except Exception:
-        print("Failed to find the add user button within the timeout period")
+            # Check if the mobile number matches
+            try:
+                print("First item is :",first_item)
+                if item_not_found or i["mobile_number"] not in first_item.text :
+
+                    # Click the 'Add User' button
+                    add_user_dialog_button = WebDriverWait(driver, 10).until(
+                        EC.element_to_be_clickable((By.XPATH, "//span[@class='symbol-label pointer']//button[@class='btn btn-link']"))
+                    )
+                    add_user_dialog_button.click()
+                    print("Add user button is clicked")
+
+
+
+                    # Fill out user details
+                    first_name_input = WebDriverWait(driver, 10).until(
+                        EC.presence_of_element_located((By.NAME, "first_name"))
+                    )
+                    last_name_input = driver.find_element(By.NAME, "last_name")
+                    email_input = driver.find_element(By.XPATH, "//div[@class='col-10 form-groupB w-100']//input[@name='email']")
+                    mobile_number_input = driver.find_element(By.XPATH, "//input[@type='tel']")
+                    postal_code_input = driver.find_element(By.NAME, "postcode")                 
+                    
+                    # Enter data into each input box
+                    first_name_input.clear()
+                    first_name_input.send_keys(i["first_name"])
+                    last_name_input.clear()
+                    last_name_input.send_keys(i["last_name"])
+                    email_input.clear()
+                    email_input.send_keys(i["email"])
+                    mobile_number_input.clear()
+                    mobile_number_input.send_keys(i["mobile_number"])
+                    postal_code_input.clear()
+                    postal_code_input.send_keys(i["postal_code"])
+
+                    # Find and click the 'Save' button
+                    all_buttons = driver.find_elements(By.TAG_NAME, "button")
+                    save_button = next((btn for btn in all_buttons if btn.text == 'Save'), None)
+
+                    if save_button is None:
+                        raise Exception("Save button not found")
+
+                    save_button.click()
+                    print("User details saved")
+
+                    WebDriverWait(driver, 10).until(
+                        EC.invisibility_of_element_located((By.XPATH, "//span[@class='symbol-label pointer']//button[@class='btn btn-link']"))
+                    )
+                    print("Waited for save button to disappear")
+                else:
+                    search_bar.clear() 
+            except:
+                continue
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+
 
 def create_order():
     """Click the 'Create Order' button to create a new order."""
@@ -224,6 +279,37 @@ def create_order():
     except Exception as e:
         log(f"Create Order button interaction failed: {e}")
         print(f"Create Order button interaction failed: {e}")
+
+def choose_container():
+        
+        def find_button(name):
+            return driver.find_element(By.XPATH, f"//input[@type='radio' and @value='{name}']")
+        
+        if CONTAINER_TYPE == 'pod':
+            # find the pod option and click it 
+            pod_radio_button = find_button('pod')
+            time.sleep(5)
+            pod_radio_button.click()
+
+            print("Pod option clicked.")
+
+        # still under process
+        elif CONTAINER_TYPE == 'container':
+            conatiner_radio_button = find_button('container')
+            conatiner_radio_button.click()
+            choose_button = driver.find_element(By.ID, "mui-component-select-container_id")
+            choose_button.click()
+            select_option = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//li[@data-value='20ft Non-Ele']"))
+            )
+            select_option.click()
+            # 
+
+        # Find proceed button to click
+        proceed_button = driver.find_element(By.XPATH, "//div[@class='modal-footer']//button[contains(text(),'Proceed')]")
+        proceed_button.click()
+        time.sleep(5)
+
 
 def search_contact():
     """Set the value of the search bar, handle the dropdown, and select an item."""
@@ -252,20 +338,6 @@ def search_contact():
         # Select the first item from the dropdown
         first_item.click()
         print("First item clicked.")
-        
-        
-        # find the pod option and click it 
-        pod_radio_button = driver.find_element(By.XPATH, "//input[@type='radio' and @value='pod']")
-        time.sleep(5)
-        print(pod_radio_button)
-        pod_radio_button.click()
-
-        print("Pod option clicked.")
-
-        # Find proceed button to click
-        proceed_button = driver.find_element(By.XPATH, "//div[@class='modal-footer']//button[contains(text(),'Proceed')]")
-        proceed_button.click()
-
         time.sleep(5)  # Wait for any possible loading
 
     except Exception as e:
@@ -286,7 +358,7 @@ def select_plan(PLAN):
         button = driver.find_element(By.XPATH, "//input[@value = 'First-Class' ]")
 
     button.click()
-    time.sleep(10)
+    time.sleep(5)
 
 
 
@@ -334,7 +406,6 @@ def add_storage_items():
     add_button.click()
     time.sleep(5)
 
-
     try:
         total_tabs= ["BEDROOM" ,"LIVING ROOM" , "KITCHEN" , "Office" ,"Garden / Garage" , "OTHER" , "PRESETS"]
         """ Call add_items() to add items in storage"""
@@ -350,6 +421,59 @@ def add_storage_items():
     except TimeoutException:
         print("Element not found within the given time.")
 
+
+def select_slot():
+    get_slot_button = driver.find_element(By.XPATH,"//div[@class = 'edit-icon']//span//span")
+    get_slot_button.click()
+    time.sleep(5)
+    select_date_button = driver.find_element(By.XPATH, f"//div[contains(text(),'{SELECTED_DAY}')]")
+    select_date_button.click()
+    time.sleep(2)
+    select_time_button = driver.find_element(By.XPATH, "//div[@class='fc-event-title fc-sticky' and contains(text(), '3pm')]")
+    select_time_button.click()
+    time.sleep(2)
+    get_save_button = driver.find_element(By.XPATH, "//div[@class='d-flex']//button[contains(text(),'Save')]")
+    get_save_button.click()
+    time.sleep(5)
+
+def make_payment():
+    try:
+        # Wait until the elements are present in the DOM
+        get_card_number_input = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, "//label[contains(@class,'CardData')]//input[@id='cardnumber']"))
+        )
+
+        get_card_number_input.send_keys('4111111111111111')
+
+        get_expiry_date_input = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, 'exp-date'))
+        )
+        get_cvv_input = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, 'card-cvv-a5f53132-11c0-4fcf-b8b9-a922effc6a7c'))
+        )
+
+        # Input card details
+       
+        get_expiry_date_input.send_keys('0430')
+        get_cvv_input.send_keys('111')
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    
+
+
+def place_order():
+    get_action_button = driver.find_element(By.XPATH,"//button[contains(text(), 'Action')]")
+    get_action_button.click()
+    get_make_payment_button = driver.find_element(By.XPATH,"//a[contains(text(), 'Make Payment')]")
+    get_make_payment_button.click() 
+    time.sleep(5)
+    make_payment()
+    time.sleep(10)
+    place_order_button =  driver.find_element(By.XPATH, "//button[contains(text(),'Place Order')]") 
+    place_order_button.click()
+    time.sleep(10)
+
 try:
     get_test_cases()
     for credentials in AUTHENTICATION:
@@ -364,10 +488,11 @@ try:
         if(ADD_USER):
             add_user()
         search_contact()
-
+        choose_container()
         select_plan(PLAN)
         add_storage_items()
-        
+        select_slot()
+        place_order()
         time.sleep(10)  # Consider using WebDriverWait here instead of sleep
 
 except Exception as e:

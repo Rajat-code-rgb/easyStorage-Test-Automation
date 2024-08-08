@@ -1345,3 +1345,809 @@ Stacktrace:
 2024-08-07 18:22:24 - Create Order button clicked
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            2024-08-07 18:26:29 - Login successful and page loaded
 2024-08-07 18:26:30 - Create Order button clicked
+2024-08-07 18:29:32 - Login successful and page loaded
+2024-08-07 18:29:32 - Create Order button clicked
+2024-08-08 09:33:27 - Login successful and page loaded
+2024-08-08 09:33:28 - Create Order button clicked
+2024-08-08 09:33:41 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF602FD9632+30946]
+	(No symbol) [0x00007FF602F8E3C9]
+	(No symbol) [0x00007FF602E86FDA]
+	(No symbol) [0x00007FF602E5CB85]
+	(No symbol) [0x00007FF602F037A7]
+	(No symbol) [0x00007FF602F1A771]
+	(No symbol) [0x00007FF602EFC813]
+	(No symbol) [0x00007FF602ECA6E5]
+	(No symbol) [0x00007FF602ECB021]
+	GetHandleVerifier [0x00007FF60310F83D+1301229]
+	GetHandleVerifier [0x00007FF60311BDB7+1351783]
+	GetHandleVerifier [0x00007FF603112A03+1313971]
+	GetHandleVerifier [0x00007FF60300DD06+245686]
+	(No symbol) [0x00007FF602F9758F]
+	(No symbol) [0x00007FF602F93804]
+	(No symbol) [0x00007FF602F93992]
+	(No symbol) [0x00007FF602F8A3EF]
+	BaseThreadInitThunk [0x00007FF985D37374+20]
+	RtlUserThreadStart [0x00007FF98623CC91+33]
+
+2024-08-08 09:34:38 - Login successful and page loaded
+2024-08-08 09:34:38 - Create Order button clicked
+2024-08-08 09:53:34 - Login successful and page loaded
+2024-08-08 09:53:34 - Create Order button clicked
+2024-08-08 10:04:10 - Login successful and page loaded
+2024-08-08 10:04:10 - Create Order button clicked
+2024-08-08 10:04:50 - Login successful and page loaded
+2024-08-08 10:04:50 - Create Order button clicked
+2024-08-08 10:05:34 - Login successful and page loaded
+2024-08-08 10:05:34 - Create Order button clicked
+2024-08-08 10:06:07 - Login successful and page loaded
+2024-08-08 10:06:08 - Create Order button clicked
+2024-08-08 10:07:38 - Login successful and page loaded
+2024-08-08 10:07:38 - Create Order button clicked
+2024-08-08 10:17:31 - Login successful and page loaded
+2024-08-08 10:17:31 - Create Order button clicked
+2024-08-08 10:19:00 - Login successful and page loaded
+2024-08-08 10:19:00 - Create Order button clicked
+2024-08-08 10:21:17 - Login successful and page loaded
+2024-08-08 10:21:18 - Create Order button clicked
+2024-08-08 10:21:51 - Login successful and page loaded
+2024-08-08 10:21:52 - Create Order button clicked
+2024-08-08 10:24:02 - Login successful and page loaded
+2024-08-08 10:24:03 - Create Order button clicked
+2024-08-08 10:24:53 - Login successful and page loaded
+2024-08-08 10:24:53 - Create Order button clicked
+2024-08-08 10:27:20 - Login successful and page loaded
+2024-08-08 10:27:20 - Create Order button clicked
+2024-08-08 10:28:05 - Login successful and page loaded
+2024-08-08 10:28:06 - Create Order button clicked
+2024-08-08 10:31:42 - Login successful and page loaded
+2024-08-08 10:31:42 - Create Order button clicked
+2024-08-08 10:33:27 - Login successful and page loaded
+2024-08-08 10:33:27 - Create Order button clicked
+2024-08-08 10:33:32 - An error occurred: add_user() missing 2 required positional arguments: 'driver' and 'add_user_details'
+2024-08-08 10:35:22 - Login successful and page loaded
+2024-08-08 10:35:22 - Create Order button clicked
+2024-08-08 10:35:27 - An error occurred: add_user() missing 2 required positional arguments: 'driver' and 'add_user_details'
+2024-08-08 10:35:51 - Login successful and page loaded
+2024-08-08 10:35:51 - Create Order button clicked
+2024-08-08 10:36:58 - Login successful and page loaded
+2024-08-08 10:36:58 - Create Order button clicked
+2024-08-08 10:50:07 - Login successful and page loaded
+2024-08-08 10:50:07 - Create Order button clicked
+2024-08-08 10:51:25 - Login successful and page loaded
+2024-08-08 10:51:26 - Create Order button clicked
+2024-08-08 10:52:07 - Login successful and page loaded
+2024-08-08 10:52:07 - Create Order button clicked
+2024-08-08 10:57:58 - Login successful and page loaded
+2024-08-08 10:57:58 - Create Order button clicked
+2024-08-08 11:00:46 - Login successful and page loaded
+2024-08-08 11:00:46 - Create Order button clicked
+2024-08-08 11:01:32 - Login successful and page loaded
+2024-08-08 11:01:32 - Create Order button clicked
+2024-08-08 11:03:00 - Login or page load failed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF699599632+30946]
+	(No symbol) [0x00007FF69954E3C9]
+	(No symbol) [0x00007FF699446FDA]
+	(No symbol) [0x00007FF69941CB85]
+	(No symbol) [0x00007FF6994C37A7]
+	(No symbol) [0x00007FF6994DA771]
+	(No symbol) [0x00007FF6994BC813]
+	(No symbol) [0x00007FF69948A6E5]
+	(No symbol) [0x00007FF69948B021]
+	GetHandleVerifier [0x00007FF6996CF83D+1301229]
+	GetHandleVerifier [0x00007FF6996DBDB7+1351783]
+	GetHandleVerifier [0x00007FF6996D2A03+1313971]
+	GetHandleVerifier [0x00007FF6995CDD06+245686]
+	(No symbol) [0x00007FF69955758F]
+	(No symbol) [0x00007FF699553804]
+	(No symbol) [0x00007FF699553992]
+	(No symbol) [0x00007FF69954A3EF]
+	BaseThreadInitThunk [0x00007FFE3C9B7374+20]
+	RtlUserThreadStart [0x00007FFE3E55CC91+33]
+
+2024-08-08 11:03:00 - Create Order button interaction failed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF699599632+30946]
+	(No symbol) [0x00007FF69954E3C9]
+	(No symbol) [0x00007FF699446FDA]
+	(No symbol) [0x00007FF69941CB85]
+	(No symbol) [0x00007FF6994C37A7]
+	(No symbol) [0x00007FF6994DA771]
+	(No symbol) [0x00007FF6994BC813]
+	(No symbol) [0x00007FF69948A6E5]
+	(No symbol) [0x00007FF69948B021]
+	GetHandleVerifier [0x00007FF6996CF83D+1301229]
+	GetHandleVerifier [0x00007FF6996DBDB7+1351783]
+	GetHandleVerifier [0x00007FF6996D2A03+1313971]
+	GetHandleVerifier [0x00007FF6995CDD06+245686]
+	(No symbol) [0x00007FF69955758F]
+	(No symbol) [0x00007FF699553804]
+	(No symbol) [0x00007FF699553992]
+	(No symbol) [0x00007FF69954A3EF]
+	BaseThreadInitThunk [0x00007FFE3C9B7374+20]
+	RtlUserThreadStart [0x00007FFE3E55CC91+33]
+
+2024-08-08 11:03:30 - Login successful and page loaded
+2024-08-08 11:03:31 - Create Order button clicked
+2024-08-08 11:05:54 - Login successful and page loaded
+2024-08-08 11:05:54 - Create Order button clicked
+2024-08-08 11:08:47 - Login successful and page loaded
+2024-08-08 11:08:47 - Create Order button clicked
+2024-08-08 11:10:48 - Login successful and page loaded
+2024-08-08 11:10:48 - Create Order button clicked
+2024-08-08 11:12:29 - Login successful and page loaded
+2024-08-08 11:12:29 - Create Order button clicked
+2024-08-08 11:40:10 - Login successful and page loaded
+2024-08-08 11:40:10 - Create Order button clicked
+2024-08-08 11:41:34 - Login successful and page loaded
+2024-08-08 11:41:34 - Create Order button clicked
+2024-08-08 11:42:19 - Login successful and page loaded
+2024-08-08 11:42:19 - Create Order button clicked
+2024-08-08 11:43:58 - Login successful and page loaded
+2024-08-08 11:43:58 - Create Order button clicked
+2024-08-08 11:44:41 - Login successful and page loaded
+2024-08-08 11:44:41 - Create Order button clicked
+2024-08-08 11:46:39 - Login successful and page loaded
+2024-08-08 11:46:39 - Create Order button clicked
+2024-08-08 11:51:11 - Login successful and page loaded
+2024-08-08 11:51:11 - Create Order button clicked
+2024-08-08 11:52:32 - Login successful and page loaded
+2024-08-08 11:52:33 - Create Order button clicked
+2024-08-08 11:53:46 - Login successful and page loaded
+2024-08-08 11:53:46 - Create Order button clicked
+2024-08-08 11:55:19 - Login successful and page loaded
+2024-08-08 11:55:19 - Create Order button clicked
+2024-08-08 11:56:09 - Login successful and page loaded
+2024-08-08 11:56:09 - Create Order button clicked
+2024-08-08 11:57:22 - Login successful and page loaded
+2024-08-08 11:57:22 - Create Order button clicked
+2024-08-08 11:58:51 - Login successful and page loaded
+2024-08-08 11:58:52 - Create Order button clicked
+2024-08-08 12:01:22 - Login successful and page loaded
+2024-08-08 12:01:22 - Create Order button clicked
+2024-08-08 12:02:56 - Login successful and page loaded
+2024-08-08 12:02:56 - Create Order button clicked
+2024-08-08 12:04:06 - Login successful and page loaded
+2024-08-08 12:04:06 - Create Order button clicked
+2024-08-08 12:07:19 - Login successful and page loaded
+2024-08-08 12:07:19 - Create Order button clicked
+2024-08-08 12:08:18 - Login successful and page loaded
+2024-08-08 12:08:18 - Create Order button clicked
+2024-08-08 12:17:33 - Login successful and page loaded
+2024-08-08 12:17:33 - Create Order button clicked
+2024-08-08 12:26:31 - Login successful and page loaded
+2024-08-08 12:26:31 - Create Order button clicked
+2024-08-08 12:26:43 - An error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'POD' ]"}
+  (Session info: chrome=127.0.6533.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF699599632+30946]
+	(No symbol) [0x00007FF69954E3C9]
+	(No symbol) [0x00007FF699446FDA]
+	(No symbol) [0x00007FF69949822C]
+	(No symbol) [0x00007FF69949850C]
+	(No symbol) [0x00007FF6994DDCB7]
+	(No symbol) [0x00007FF6994BCAAF]
+	(No symbol) [0x00007FF6994DB041]
+	(No symbol) [0x00007FF6994BC813]
+	(No symbol) [0x00007FF69948A6E5]
+	(No symbol) [0x00007FF69948B021]
+	GetHandleVerifier [0x00007FF6996CF83D+1301229]
+	GetHandleVerifier [0x00007FF6996DBDB7+1351783]
+	GetHandleVerifier [0x00007FF6996D2A03+1313971]
+	GetHandleVerifier [0x00007FF6995CDD06+245686]
+	(No symbol) [0x00007FF69955758F]
+	(No symbol) [0x00007FF699553804]
+	(No symbol) [0x00007FF699553992]
+	(No symbol) [0x00007FF69954A3EF]
+	BaseThreadInitThunk [0x00007FFE3C9B7374+20]
+	RtlUserThreadStart [0x00007FFE3E55CC91+33]
+
+2024-08-08 12:31:47 - Login successful and page loaded
+2024-08-08 12:31:47 - Create Order button clicked
+2024-08-08 12:31:59 - An error occurred: type object 'By' has no attribute 'PATH'
+2024-08-08 12:32:22 - Login successful and page loaded
+2024-08-08 12:32:22 - Create Order button clicked
+2024-08-08 12:32:34 - An error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id = 'mui-component-select-container_id']"}
+  (Session info: chrome=127.0.6533.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF699599632+30946]
+	(No symbol) [0x00007FF69954E3C9]
+	(No symbol) [0x00007FF699446FDA]
+	(No symbol) [0x00007FF69949822C]
+	(No symbol) [0x00007FF69949850C]
+	(No symbol) [0x00007FF6994DDCB7]
+	(No symbol) [0x00007FF6994BCAAF]
+	(No symbol) [0x00007FF6994DB041]
+	(No symbol) [0x00007FF6994BC813]
+	(No symbol) [0x00007FF69948A6E5]
+	(No symbol) [0x00007FF69948B021]
+	GetHandleVerifier [0x00007FF6996CF83D+1301229]
+	GetHandleVerifier [0x00007FF6996DBDB7+1351783]
+	GetHandleVerifier [0x00007FF6996D2A03+1313971]
+	GetHandleVerifier [0x00007FF6995CDD06+245686]
+	(No symbol) [0x00007FF69955758F]
+	(No symbol) [0x00007FF699553804]
+	(No symbol) [0x00007FF699553992]
+	(No symbol) [0x00007FF69954A3EF]
+	BaseThreadInitThunk [0x00007FFE3C9B7374+20]
+	RtlUserThreadStart [0x00007FFE3E55CC91+33]
+
+2024-08-08 12:33:15 - Login successful and page loaded
+2024-08-08 12:33:15 - Create Order button clicked
+2024-08-08 12:33:38 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF699599632+30946]
+	(No symbol) [0x00007FF69954E3C9]
+	(No symbol) [0x00007FF699446FDA]
+	(No symbol) [0x00007FF69941CB85]
+	(No symbol) [0x00007FF6994C37A7]
+	(No symbol) [0x00007FF6994DA771]
+	(No symbol) [0x00007FF6994BC813]
+	(No symbol) [0x00007FF69948A6E5]
+	(No symbol) [0x00007FF69948B021]
+	GetHandleVerifier [0x00007FF6996CF83D+1301229]
+	GetHandleVerifier [0x00007FF6996DBDB7+1351783]
+	GetHandleVerifier [0x00007FF6996D2A03+1313971]
+	GetHandleVerifier [0x00007FF6995CDD06+245686]
+	(No symbol) [0x00007FF69955758F]
+	(No symbol) [0x00007FF699553804]
+	(No symbol) [0x00007FF699553992]
+	(No symbol) [0x00007FF69954A3EF]
+	BaseThreadInitThunk [0x00007FFE3C9B7374+20]
+	RtlUserThreadStart [0x00007FFE3E55CC91+33]
+
+2024-08-08 12:35:19 - Login successful and page loaded
+2024-08-08 12:35:20 - Create Order button clicked
+2024-08-08 12:36:13 - An error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'POD' ]"}
+  (Session info: chrome=127.0.6533.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF699599632+30946]
+	(No symbol) [0x00007FF69954E3C9]
+	(No symbol) [0x00007FF699446FDA]
+	(No symbol) [0x00007FF69949822C]
+	(No symbol) [0x00007FF69949850C]
+	(No symbol) [0x00007FF6994DDCB7]
+	(No symbol) [0x00007FF6994BCAAF]
+	(No symbol) [0x00007FF6994DB041]
+	(No symbol) [0x00007FF6994BC813]
+	(No symbol) [0x00007FF69948A6E5]
+	(No symbol) [0x00007FF69948B021]
+	GetHandleVerifier [0x00007FF6996CF83D+1301229]
+	GetHandleVerifier [0x00007FF6996DBDB7+1351783]
+	GetHandleVerifier [0x00007FF6996D2A03+1313971]
+	GetHandleVerifier [0x00007FF6995CDD06+245686]
+	(No symbol) [0x00007FF69955758F]
+	(No symbol) [0x00007FF699553804]
+	(No symbol) [0x00007FF699553992]
+	(No symbol) [0x00007FF69954A3EF]
+	BaseThreadInitThunk [0x00007FFE3C9B7374+20]
+	RtlUserThreadStart [0x00007FFE3E55CC91+33]
+
+2024-08-08 12:36:50 - Login or page load failed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF699599632+30946]
+	(No symbol) [0x00007FF69954E3C9]
+	(No symbol) [0x00007FF699446FDA]
+	(No symbol) [0x00007FF69941CB85]
+	(No symbol) [0x00007FF6994C37A7]
+	(No symbol) [0x00007FF6994DA771]
+	(No symbol) [0x00007FF6994BC813]
+	(No symbol) [0x00007FF69948A6E5]
+	(No symbol) [0x00007FF69948B021]
+	GetHandleVerifier [0x00007FF6996CF83D+1301229]
+	GetHandleVerifier [0x00007FF6996DBDB7+1351783]
+	GetHandleVerifier [0x00007FF6996D2A03+1313971]
+	GetHandleVerifier [0x00007FF6995CDD06+245686]
+	(No symbol) [0x00007FF69955758F]
+	(No symbol) [0x00007FF699553804]
+	(No symbol) [0x00007FF699553992]
+	(No symbol) [0x00007FF69954A3EF]
+	BaseThreadInitThunk [0x00007FFE3C9B7374+20]
+	RtlUserThreadStart [0x00007FFE3E55CC91+33]
+
+2024-08-08 12:36:50 - Create Order button interaction failed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF699599632+30946]
+	(No symbol) [0x00007FF69954E3C9]
+	(No symbol) [0x00007FF699446FDA]
+	(No symbol) [0x00007FF69941CB85]
+	(No symbol) [0x00007FF6994C37A7]
+	(No symbol) [0x00007FF6994DA771]
+	(No symbol) [0x00007FF6994BC813]
+	(No symbol) [0x00007FF69948A6E5]
+	(No symbol) [0x00007FF69948B021]
+	GetHandleVerifier [0x00007FF6996CF83D+1301229]
+	GetHandleVerifier [0x00007FF6996DBDB7+1351783]
+	GetHandleVerifier [0x00007FF6996D2A03+1313971]
+	GetHandleVerifier [0x00007FF6995CDD06+245686]
+	(No symbol) [0x00007FF69955758F]
+	(No symbol) [0x00007FF699553804]
+	(No symbol) [0x00007FF699553992]
+	(No symbol) [0x00007FF69954A3EF]
+	BaseThreadInitThunk [0x00007FFE3C9B7374+20]
+	RtlUserThreadStart [0x00007FFE3E55CC91+33]
+
+2024-08-08 12:37:29 - Login successful and page loaded
+2024-08-08 12:37:29 - Create Order button clicked
+2024-08-08 12:38:41 - An error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'POD' ]"}
+  (Session info: chrome=127.0.6533.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF699599632+30946]
+	(No symbol) [0x00007FF69954E3C9]
+	(No symbol) [0x00007FF699446FDA]
+	(No symbol) [0x00007FF69949822C]
+	(No symbol) [0x00007FF69949850C]
+	(No symbol) [0x00007FF6994DDCB7]
+	(No symbol) [0x00007FF6994BCAAF]
+	(No symbol) [0x00007FF6994DB041]
+	(No symbol) [0x00007FF6994BC813]
+	(No symbol) [0x00007FF69948A6E5]
+	(No symbol) [0x00007FF69948B021]
+	GetHandleVerifier [0x00007FF6996CF83D+1301229]
+	GetHandleVerifier [0x00007FF6996DBDB7+1351783]
+	GetHandleVerifier [0x00007FF6996D2A03+1313971]
+	GetHandleVerifier [0x00007FF6995CDD06+245686]
+	(No symbol) [0x00007FF69955758F]
+	(No symbol) [0x00007FF699553804]
+	(No symbol) [0x00007FF699553992]
+	(No symbol) [0x00007FF69954A3EF]
+	BaseThreadInitThunk [0x00007FFE3C9B7374+20]
+	RtlUserThreadStart [0x00007FFE3E55CC91+33]
+
+2024-08-08 12:39:23 - Login successful and page loaded
+2024-08-08 12:39:23 - Create Order button clicked
+2024-08-08 12:41:58 - An error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'POD' ]"}
+  (Session info: chrome=127.0.6533.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF699599632+30946]
+	(No symbol) [0x00007FF69954E3C9]
+	(No symbol) [0x00007FF699446FDA]
+	(No symbol) [0x00007FF69949822C]
+	(No symbol) [0x00007FF69949850C]
+	(No symbol) [0x00007FF6994DDCB7]
+	(No symbol) [0x00007FF6994BCAAF]
+	(No symbol) [0x00007FF6994DB041]
+	(No symbol) [0x00007FF6994BC813]
+	(No symbol) [0x00007FF69948A6E5]
+	(No symbol) [0x00007FF69948B021]
+	GetHandleVerifier [0x00007FF6996CF83D+1301229]
+	GetHandleVerifier [0x00007FF6996DBDB7+1351783]
+	GetHandleVerifier [0x00007FF6996D2A03+1313971]
+	GetHandleVerifier [0x00007FF6995CDD06+245686]
+	(No symbol) [0x00007FF69955758F]
+	(No symbol) [0x00007FF699553804]
+	(No symbol) [0x00007FF699553992]
+	(No symbol) [0x00007FF69954A3EF]
+	BaseThreadInitThunk [0x00007FFE3C9B7374+20]
+	RtlUserThreadStart [0x00007FFE3E55CC91+33]
+
+2024-08-08 12:48:41 - Login successful and page loaded
+2024-08-08 12:48:41 - Create Order button clicked
+2024-08-08 12:52:30 - An error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'POD' ]"}
+  (Session info: chrome=127.0.6533.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF699599632+30946]
+	(No symbol) [0x00007FF69954E3C9]
+	(No symbol) [0x00007FF699446FDA]
+	(No symbol) [0x00007FF69949822C]
+	(No symbol) [0x00007FF69949850C]
+	(No symbol) [0x00007FF6994DDCB7]
+	(No symbol) [0x00007FF6994BCAAF]
+	(No symbol) [0x00007FF6994DB041]
+	(No symbol) [0x00007FF6994BC813]
+	(No symbol) [0x00007FF69948A6E5]
+	(No symbol) [0x00007FF69948B021]
+	GetHandleVerifier [0x00007FF6996CF83D+1301229]
+	GetHandleVerifier [0x00007FF6996DBDB7+1351783]
+	GetHandleVerifier [0x00007FF6996D2A03+1313971]
+	GetHandleVerifier [0x00007FF6995CDD06+245686]
+	(No symbol) [0x00007FF69955758F]
+	(No symbol) [0x00007FF699553804]
+	(No symbol) [0x00007FF699553992]
+	(No symbol) [0x00007FF69954A3EF]
+	BaseThreadInitThunk [0x00007FFE3C9B7374+20]
+	RtlUserThreadStart [0x00007FFE3E55CC91+33]
+
+2024-08-08 12:55:07 - Login successful and page loaded
+2024-08-08 12:55:07 - Create Order button clicked
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          2024-08-08 13:14:10 - Login successful and page loaded
+2024-08-08 13:14:10 - Create Order button clicked
+2024-08-08 13:14:27 - An error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value = 'POD' ]"}
+  (Session info: chrome=127.0.6533.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF673A69632+30946]
+	(No symbol) [0x00007FF673A1E3C9]
+	(No symbol) [0x00007FF673916FDA]
+	(No symbol) [0x00007FF67396822C]
+	(No symbol) [0x00007FF67396850C]
+	(No symbol) [0x00007FF6739ADCB7]
+	(No symbol) [0x00007FF67398CAAF]
+	(No symbol) [0x00007FF6739AB041]
+	(No symbol) [0x00007FF67398C813]
+	(No symbol) [0x00007FF67395A6E5]
+	(No symbol) [0x00007FF67395B021]
+	GetHandleVerifier [0x00007FF673B9F83D+1301229]
+	GetHandleVerifier [0x00007FF673BABDB7+1351783]
+	GetHandleVerifier [0x00007FF673BA2A03+1313971]
+	GetHandleVerifier [0x00007FF673A9DD06+245686]
+	(No symbol) [0x00007FF673A2758F]
+	(No symbol) [0x00007FF673A23804]
+	(No symbol) [0x00007FF673A23992]
+	(No symbol) [0x00007FF673A1A3EF]
+	BaseThreadInitThunk [0x00007FF838517374+20]
+	RtlUserThreadStart [0x00007FF839B5CC91+33]
+
+2024-08-08 13:15:31 - Login successful and page loaded
+2024-08-08 13:15:32 - Create Order button clicked
+2024-08-08 13:16:09 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF673A69632+30946]
+	(No symbol) [0x00007FF673A1E3C9]
+	(No symbol) [0x00007FF673916FDA]
+	(No symbol) [0x00007FF6738ECB85]
+	(No symbol) [0x00007FF6739937A7]
+	(No symbol) [0x00007FF6739AA771]
+	(No symbol) [0x00007FF67398C813]
+	(No symbol) [0x00007FF67395A6E5]
+	(No symbol) [0x00007FF67395B021]
+	GetHandleVerifier [0x00007FF673B9F83D+1301229]
+	GetHandleVerifier [0x00007FF673BABDB7+1351783]
+	GetHandleVerifier [0x00007FF673BA2A03+1313971]
+	GetHandleVerifier [0x00007FF673A9DD06+245686]
+	(No symbol) [0x00007FF673A2758F]
+	(No symbol) [0x00007FF673A23804]
+	(No symbol) [0x00007FF673A23992]
+	(No symbol) [0x00007FF673A1A3EF]
+	BaseThreadInitThunk [0x00007FF838517374+20]
+	RtlUserThreadStart [0x00007FF839B5CC91+33]
+
+2024-08-08 13:16:32 - Login successful and page loaded
+2024-08-08 13:16:32 - Create Order button clicked
+2024-08-08 13:17:30 - An error occurred: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=127.0.6533.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF673A69632+30946]
+	(No symbol) [0x00007FF673A1E3C9]
+	(No symbol) [0x00007FF673916FDA]
+	(No symbol) [0x00007FF67391DA57]
+	(No symbol) [0x00007FF67391FD31]
+	(No symbol) [0x00007FF67391FDD0]
+	(No symbol) [0x00007FF67396A3AB]
+	(No symbol) [0x00007FF67395C126]
+	(No symbol) [0x00007FF67398CA6A]
+	(No symbol) [0x00007FF67395BBB6]
+	(No symbol) [0x00007FF67398CC80]
+	(No symbol) [0x00007FF6739AB041]
+	(No symbol) [0x00007FF67398C813]
+	(No symbol) [0x00007FF67395A6E5]
+	(No symbol) [0x00007FF67395B021]
+	GetHandleVerifier [0x00007FF673B9F83D+1301229]
+	GetHandleVerifier [0x00007FF673BABDB7+1351783]
+	GetHandleVerifier [0x00007FF673BA2A03+1313971]
+	GetHandleVerifier [0x00007FF673A9DD06+245686]
+	(No symbol) [0x00007FF673A2758F]
+	(No symbol) [0x00007FF673A23804]
+	(No symbol) [0x00007FF673A23992]
+	(No symbol) [0x00007FF673A1A3EF]
+	BaseThreadInitThunk [0x00007FF838517374+20]
+	RtlUserThreadStart [0x00007FF839B5CC91+33]
+
+2024-08-08 13:23:26 - Login successful and page loaded
+2024-08-08 13:23:26 - Create Order button clicked
+2024-08-08 13:23:43 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF673A69632+30946]
+	(No symbol) [0x00007FF673A1E3C9]
+	(No symbol) [0x00007FF673916FDA]
+	(No symbol) [0x00007FF6738ECB85]
+	(No symbol) [0x00007FF6739937A7]
+	(No symbol) [0x00007FF6739AA771]
+	(No symbol) [0x00007FF67398C813]
+	(No symbol) [0x00007FF67395A6E5]
+	(No symbol) [0x00007FF67395B021]
+	GetHandleVerifier [0x00007FF673B9F83D+1301229]
+	GetHandleVerifier [0x00007FF673BABDB7+1351783]
+	GetHandleVerifier [0x00007FF673BA2A03+1313971]
+	GetHandleVerifier [0x00007FF673A9DD06+245686]
+	(No symbol) [0x00007FF673A2758F]
+	(No symbol) [0x00007FF673A23804]
+	(No symbol) [0x00007FF673A23992]
+	(No symbol) [0x00007FF673A1A3EF]
+	BaseThreadInitThunk [0x00007FF838517374+20]
+	RtlUserThreadStart [0x00007FF839B5CC91+33]
+
+2024-08-08 13:24:14 - Login successful and page loaded
+2024-08-08 13:24:14 - Create Order button clicked
+2024-08-08 13:24:48 - An error occurred: Message: element click intercepted: Element <span class="svg-icon svg-icon-sm svg-icon-primary " role="button">...</span> is not clickable at point (1697, 345). Other element would receive the click: <div id="exampleModalLive" class="modal fade show" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="display: block; padding-right: 17px; overflow: scroll;">...</div>
+  (Session info: chrome=127.0.6533.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF673A69632+30946]
+	(No symbol) [0x00007FF673A1E3C9]
+	(No symbol) [0x00007FF673916FDA]
+	(No symbol) [0x00007FF67396FEEE]
+	(No symbol) [0x00007FF67396D962]
+	(No symbol) [0x00007FF67396AE7B]
+	(No symbol) [0x00007FF67396A095]
+	(No symbol) [0x00007FF67395C271]
+	(No symbol) [0x00007FF67398CA6A]
+	(No symbol) [0x00007FF67395BBB6]
+	(No symbol) [0x00007FF67398CC80]
+	(No symbol) [0x00007FF6739AB041]
+	(No symbol) [0x00007FF67398C813]
+	(No symbol) [0x00007FF67395A6E5]
+	(No symbol) [0x00007FF67395B021]
+	GetHandleVerifier [0x00007FF673B9F83D+1301229]
+	GetHandleVerifier [0x00007FF673BABDB7+1351783]
+	GetHandleVerifier [0x00007FF673BA2A03+1313971]
+	GetHandleVerifier [0x00007FF673A9DD06+245686]
+	(No symbol) [0x00007FF673A2758F]
+	(No symbol) [0x00007FF673A23804]
+	(No symbol) [0x00007FF673A23992]
+	(No symbol) [0x00007FF673A1A3EF]
+	BaseThreadInitThunk [0x00007FF838517374+20]
+	RtlUserThreadStart [0x00007FF839B5CC91+33]
+
+2024-08-08 13:26:03 - Login successful and page loaded
+2024-08-08 13:26:03 - Create Order button clicked
+2024-08-08 13:34:08 - Login successful and page loaded
+2024-08-08 13:34:09 - Create Order button clicked
+2024-08-08 13:35:16 - An error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Book')]"}
+  (Session info: chrome=127.0.6533.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF673A69632+30946]
+	(No symbol) [0x00007FF673A1E3C9]
+	(No symbol) [0x00007FF673916FDA]
+	(No symbol) [0x00007FF67396822C]
+	(No symbol) [0x00007FF67396850C]
+	(No symbol) [0x00007FF6739ADCB7]
+	(No symbol) [0x00007FF67398CAAF]
+	(No symbol) [0x00007FF6739AB041]
+	(No symbol) [0x00007FF67398C813]
+	(No symbol) [0x00007FF67395A6E5]
+	(No symbol) [0x00007FF67395B021]
+	GetHandleVerifier [0x00007FF673B9F83D+1301229]
+	GetHandleVerifier [0x00007FF673BABDB7+1351783]
+	GetHandleVerifier [0x00007FF673BA2A03+1313971]
+	GetHandleVerifier [0x00007FF673A9DD06+245686]
+	(No symbol) [0x00007FF673A2758F]
+	(No symbol) [0x00007FF673A23804]
+	(No symbol) [0x00007FF673A23992]
+	(No symbol) [0x00007FF673A1A3EF]
+	BaseThreadInitThunk [0x00007FF838517374+20]
+	RtlUserThreadStart [0x00007FF839B5CC91+33]
+
+2024-08-08 14:58:02 - Login successful and page loaded
+2024-08-08 14:58:02 - Create Order button clicked
+2024-08-08 14:59:10 - An error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Book')]"}
+  (Session info: chrome=127.0.6533.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF673A69632+30946]
+	(No symbol) [0x00007FF673A1E3C9]
+	(No symbol) [0x00007FF673916FDA]
+	(No symbol) [0x00007FF67396822C]
+	(No symbol) [0x00007FF67396850C]
+	(No symbol) [0x00007FF6739ADCB7]
+	(No symbol) [0x00007FF67398CAAF]
+	(No symbol) [0x00007FF6739AB041]
+	(No symbol) [0x00007FF67398C813]
+	(No symbol) [0x00007FF67395A6E5]
+	(No symbol) [0x00007FF67395B021]
+	GetHandleVerifier [0x00007FF673B9F83D+1301229]
+	GetHandleVerifier [0x00007FF673BABDB7+1351783]
+	GetHandleVerifier [0x00007FF673BA2A03+1313971]
+	GetHandleVerifier [0x00007FF673A9DD06+245686]
+	(No symbol) [0x00007FF673A2758F]
+	(No symbol) [0x00007FF673A23804]
+	(No symbol) [0x00007FF673A23992]
+	(No symbol) [0x00007FF673A1A3EF]
+	BaseThreadInitThunk [0x00007FF838517374+20]
+	RtlUserThreadStart [0x00007FF839B5CC91+33]
+
+2024-08-08 15:04:09 - Login successful and page loaded
+2024-08-08 15:04:09 - Create Order button clicked
+2024-08-08 15:05:43 - An error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Book')]"}
+  (Session info: chrome=127.0.6533.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF673A69632+30946]
+	(No symbol) [0x00007FF673A1E3C9]
+	(No symbol) [0x00007FF673916FDA]
+	(No symbol) [0x00007FF67396822C]
+	(No symbol) [0x00007FF67396850C]
+	(No symbol) [0x00007FF6739ADCB7]
+	(No symbol) [0x00007FF67398CAAF]
+	(No symbol) [0x00007FF6739AB041]
+	(No symbol) [0x00007FF67398C813]
+	(No symbol) [0x00007FF67395A6E5]
+	(No symbol) [0x00007FF67395B021]
+	GetHandleVerifier [0x00007FF673B9F83D+1301229]
+	GetHandleVerifier [0x00007FF673BABDB7+1351783]
+	GetHandleVerifier [0x00007FF673BA2A03+1313971]
+	GetHandleVerifier [0x00007FF673A9DD06+245686]
+	(No symbol) [0x00007FF673A2758F]
+	(No symbol) [0x00007FF673A23804]
+	(No symbol) [0x00007FF673A23992]
+	(No symbol) [0x00007FF673A1A3EF]
+	BaseThreadInitThunk [0x00007FF838517374+20]
+	RtlUserThreadStart [0x00007FF839B5CC91+33]
+
+2024-08-08 15:06:41 - Login successful and page loaded
+2024-08-08 15:06:42 - Create Order button clicked
+2024-08-08 15:08:45 - An error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class = 'edit-icon']//span//span"}
+  (Session info: chrome=127.0.6533.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF673A69632+30946]
+	(No symbol) [0x00007FF673A1E3C9]
+	(No symbol) [0x00007FF673916FDA]
+	(No symbol) [0x00007FF67396822C]
+	(No symbol) [0x00007FF67396850C]
+	(No symbol) [0x00007FF6739ADCB7]
+	(No symbol) [0x00007FF67398CAAF]
+	(No symbol) [0x00007FF6739AB041]
+	(No symbol) [0x00007FF67398C813]
+	(No symbol) [0x00007FF67395A6E5]
+	(No symbol) [0x00007FF67395B021]
+	GetHandleVerifier [0x00007FF673B9F83D+1301229]
+	GetHandleVerifier [0x00007FF673BABDB7+1351783]
+	GetHandleVerifier [0x00007FF673BA2A03+1313971]
+	GetHandleVerifier [0x00007FF673A9DD06+245686]
+	(No symbol) [0x00007FF673A2758F]
+	(No symbol) [0x00007FF673A23804]
+	(No symbol) [0x00007FF673A23992]
+	(No symbol) [0x00007FF673A1A3EF]
+	BaseThreadInitThunk [0x00007FF838517374+20]
+	RtlUserThreadStart [0x00007FF839B5CC91+33]
+
+2024-08-08 15:15:40 - Login successful and page loaded
+2024-08-08 15:15:40 - Create Order button clicked
+2024-08-08 15:19:47 - Login successful and page loaded
+2024-08-08 15:19:48 - Create Order button clicked
+2024-08-08 15:59:10 - Login successful and page loaded
+2024-08-08 15:59:11 - Create Order button clicked
+2024-08-08 15:59:54 - An error occurred: Message: element not interactable
+  (Session info: chrome=127.0.6533.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF673A69632+30946]
+	(No symbol) [0x00007FF673A1E3C9]
+	(No symbol) [0x00007FF673916E09]
+	(No symbol) [0x00007FF673969712]
+	(No symbol) [0x00007FF67395C271]
+	(No symbol) [0x00007FF67398CA6A]
+	(No symbol) [0x00007FF67395BBB6]
+	(No symbol) [0x00007FF67398CC80]
+	(No symbol) [0x00007FF6739AB041]
+	(No symbol) [0x00007FF67398C813]
+	(No symbol) [0x00007FF67395A6E5]
+	(No symbol) [0x00007FF67395B021]
+	GetHandleVerifier [0x00007FF673B9F83D+1301229]
+	GetHandleVerifier [0x00007FF673BABDB7+1351783]
+	GetHandleVerifier [0x00007FF673BA2A03+1313971]
+	GetHandleVerifier [0x00007FF673A9DD06+245686]
+	(No symbol) [0x00007FF673A2758F]
+	(No symbol) [0x00007FF673A23804]
+	(No symbol) [0x00007FF673A23992]
+	(No symbol) [0x00007FF673A1A3EF]
+	BaseThreadInitThunk [0x00007FF838517374+20]
+	RtlUserThreadStart [0x00007FF839B5CC91+33]
+
+2024-08-08 16:02:34 - Login successful and page loaded
+2024-08-08 16:02:35 - Create Order button clicked
+2024-08-08 16:18:32 - Login successful and page loaded
+2024-08-08 16:18:32 - Create Order button clicked
+2024-08-08 16:45:34 - Login successful and page loaded
+2024-08-08 16:45:34 - Create Order button clicked
+2024-08-08 16:51:43 - Login successful and page loaded
+2024-08-08 16:51:43 - Create Order button clicked
+2024-08-08 16:56:33 - Login successful and page loaded
+2024-08-08 16:56:33 - Create Order button clicked
+2024-08-08 17:05:56 - Login successful and page loaded
+2024-08-08 17:05:56 - Create Order button clicked
+2024-08-08 17:08:00 - An error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class = 'col-4 dropdown-inline dropdown' and contains(text(), 'Action')]"}
+  (Session info: chrome=127.0.6533.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF745939632+30946]
+	(No symbol) [0x00007FF7458EE3C9]
+	(No symbol) [0x00007FF7457E6FDA]
+	(No symbol) [0x00007FF74583822C]
+	(No symbol) [0x00007FF74583850C]
+	(No symbol) [0x00007FF74587DCB7]
+	(No symbol) [0x00007FF74585CAAF]
+	(No symbol) [0x00007FF74587B041]
+	(No symbol) [0x00007FF74585C813]
+	(No symbol) [0x00007FF74582A6E5]
+	(No symbol) [0x00007FF74582B021]
+	GetHandleVerifier [0x00007FF745A6F83D+1301229]
+	GetHandleVerifier [0x00007FF745A7BDB7+1351783]
+	GetHandleVerifier [0x00007FF745A72A03+1313971]
+	GetHandleVerifier [0x00007FF74596DD06+245686]
+	(No symbol) [0x00007FF7458F758F]
+	(No symbol) [0x00007FF7458F3804]
+	(No symbol) [0x00007FF7458F3992]
+	(No symbol) [0x00007FF7458EA3EF]
+	BaseThreadInitThunk [0x00007FFB6FC47374+20]
+	RtlUserThreadStart [0x00007FFB7113CC91+33]
+
+2024-08-08 17:36:00 - Login successful and page loaded
+2024-08-08 17:36:01 - Create Order button clicked
+2024-08-08 17:39:16 - Login successful and page loaded
+2024-08-08 17:39:17 - Create Order button clicked
+2024-08-08 17:52:59 - Login successful and page loaded
+2024-08-08 17:53:00 - Create Order button clicked
+2024-08-08 17:55:02 - An error occurred: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="cardnumber"]"}
+  (Session info: chrome=127.0.6533.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF745939632+30946]
+	(No symbol) [0x00007FF7458EE3C9]
+	(No symbol) [0x00007FF7457E6FDA]
+	(No symbol) [0x00007FF74583822C]
+	(No symbol) [0x00007FF74583850C]
+	(No symbol) [0x00007FF74587DCB7]
+	(No symbol) [0x00007FF74585CAAF]
+	(No symbol) [0x00007FF74587B041]
+	(No symbol) [0x00007FF74585C813]
+	(No symbol) [0x00007FF74582A6E5]
+	(No symbol) [0x00007FF74582B021]
+	GetHandleVerifier [0x00007FF745A6F83D+1301229]
+	GetHandleVerifier [0x00007FF745A7BDB7+1351783]
+	GetHandleVerifier [0x00007FF745A72A03+1313971]
+	GetHandleVerifier [0x00007FF74596DD06+245686]
+	(No symbol) [0x00007FF7458F758F]
+	(No symbol) [0x00007FF7458F3804]
+	(No symbol) [0x00007FF7458F3992]
+	(No symbol) [0x00007FF7458EA3EF]
+	BaseThreadInitThunk [0x00007FFB6FC47374+20]
+	RtlUserThreadStart [0x00007FFB7113CC91+33]
+
+2024-08-08 17:55:58 - Login successful and page loaded
+2024-08-08 17:55:59 - Create Order button clicked
+2024-08-08 17:58:07 - An error occurred: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="cardnumber"]"}
+  (Session info: chrome=127.0.6533.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF745939632+30946]
+	(No symbol) [0x00007FF7458EE3C9]
+	(No symbol) [0x00007FF7457E6FDA]
+	(No symbol) [0x00007FF74583822C]
+	(No symbol) [0x00007FF74583850C]
+	(No symbol) [0x00007FF74587DCB7]
+	(No symbol) [0x00007FF74585CAAF]
+	(No symbol) [0x00007FF74587B041]
+	(No symbol) [0x00007FF74585C813]
+	(No symbol) [0x00007FF74582A6E5]
+	(No symbol) [0x00007FF74582B021]
+	GetHandleVerifier [0x00007FF745A6F83D+1301229]
+	GetHandleVerifier [0x00007FF745A7BDB7+1351783]
+	GetHandleVerifier [0x00007FF745A72A03+1313971]
+	GetHandleVerifier [0x00007FF74596DD06+245686]
+	(No symbol) [0x00007FF7458F758F]
+	(No symbol) [0x00007FF7458F3804]
+	(No symbol) [0x00007FF7458F3992]
+	(No symbol) [0x00007FF7458EA3EF]
+	BaseThreadInitThunk [0x00007FFB6FC47374+20]
+	RtlUserThreadStart [0x00007FFB7113CC91+33]
+
+2024-08-08 18:00:52 - Login successful and page loaded
+2024-08-08 18:00:52 - Create Order button clicked
+2024-08-08 18:02:47 - An error occurred: make_payment() missing 1 required positional argument: 'driver'
+2024-08-08 18:03:28 - Login successful and page loaded
+2024-08-08 18:03:28 - Create Order button clicked
+2024-08-08 18:10:07 - Login successful and page loaded
+2024-08-08 18:10:07 - Create Order button clicked
+2024-08-08 18:29:28 - Login successful and page loaded
+2024-08-08 18:29:28 - Create Order button clicked
