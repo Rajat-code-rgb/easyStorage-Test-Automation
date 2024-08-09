@@ -2151,3 +2151,184 @@ Stacktrace:
 2024-08-08 18:10:07 - Create Order button clicked
 2024-08-08 18:29:28 - Login successful and page loaded
 2024-08-08 18:29:28 - Create Order button clicked
+2024-08-09 11:05:46 - Login or page load failed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.100)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61B759632+30946]
+	(No symbol) [0x00007FF61B70E3C9]
+	(No symbol) [0x00007FF61B606FDA]
+	(No symbol) [0x00007FF61B5DCB85]
+	(No symbol) [0x00007FF61B6837A7]
+	(No symbol) [0x00007FF61B69A771]
+	(No symbol) [0x00007FF61B67C813]
+	(No symbol) [0x00007FF61B64A6E5]
+	(No symbol) [0x00007FF61B64B021]
+	GetHandleVerifier [0x00007FF61B88F83D+1301229]
+	GetHandleVerifier [0x00007FF61B89BDB7+1351783]
+	GetHandleVerifier [0x00007FF61B892A03+1313971]
+	GetHandleVerifier [0x00007FF61B78DD06+245686]
+	(No symbol) [0x00007FF61B71758F]
+	(No symbol) [0x00007FF61B713804]
+	(No symbol) [0x00007FF61B713992]
+	(No symbol) [0x00007FF61B70A3EF]
+	BaseThreadInitThunk [0x00007FFE98227374+20]
+	RtlUserThreadStart [0x00007FFE9A0DCC91+33]
+
+2024-08-09 11:05:46 - Create Order button interaction failed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.100)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61B759632+30946]
+	(No symbol) [0x00007FF61B70E3C9]
+	(No symbol) [0x00007FF61B606FDA]
+	(No symbol) [0x00007FF61B5DCB85]
+	(No symbol) [0x00007FF61B6837A7]
+	(No symbol) [0x00007FF61B69A771]
+	(No symbol) [0x00007FF61B67C813]
+	(No symbol) [0x00007FF61B64A6E5]
+	(No symbol) [0x00007FF61B64B021]
+	GetHandleVerifier [0x00007FF61B88F83D+1301229]
+	GetHandleVerifier [0x00007FF61B89BDB7+1351783]
+	GetHandleVerifier [0x00007FF61B892A03+1313971]
+	GetHandleVerifier [0x00007FF61B78DD06+245686]
+	(No symbol) [0x00007FF61B71758F]
+	(No symbol) [0x00007FF61B713804]
+	(No symbol) [0x00007FF61B713992]
+	(No symbol) [0x00007FF61B70A3EF]
+	BaseThreadInitThunk [0x00007FFE98227374+20]
+	RtlUserThreadStart [0x00007FFE9A0DCC91+33]
+
+2024-08-09 11:05:51 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.100)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61B759632+30946]
+	(No symbol) [0x00007FF61B70E3C9]
+	(No symbol) [0x00007FF61B606FDA]
+	(No symbol) [0x00007FF61B5DCB85]
+	(No symbol) [0x00007FF61B6837A7]
+	(No symbol) [0x00007FF61B69A771]
+	(No symbol) [0x00007FF61B67C813]
+	(No symbol) [0x00007FF61B64A6E5]
+	(No symbol) [0x00007FF61B64B021]
+	GetHandleVerifier [0x00007FF61B88F83D+1301229]
+	GetHandleVerifier [0x00007FF61B89BDB7+1351783]
+	GetHandleVerifier [0x00007FF61B892A03+1313971]
+	GetHandleVerifier [0x00007FF61B78DD06+245686]
+	(No symbol) [0x00007FF61B71758F]
+	(No symbol) [0x00007FF61B713804]
+	(No symbol) [0x00007FF61B713992]
+	(No symbol) [0x00007FF61B70A3EF]
+	BaseThreadInitThunk [0x00007FFE98227374+20]
+	RtlUserThreadStart [0x00007FFE9A0DCC91+33]
+
+2024-08-09 11:07:10 - Login successful and page loaded
+2024-08-09 11:07:10 - Create Order button clicked
+2024-08-09 11:11:17 - Login successful and page loaded
+2024-08-09 11:11:17 - Create Order button clicked
+2024-08-09 11:13:09 - Login successful and page loaded
+2024-08-09 11:13:09 - Create Order button clicked
+2024-08-09 11:14:45 - Login successful and page loaded
+2024-08-09 11:14:45 - Create Order button clicked
+2024-08-09 11:21:02 - Login successful and page loaded
+2024-08-09 11:21:02 - Create Order button clicked
+2024-08-09 11:32:41 - Login successful and page loaded
+2024-08-09 11:32:41 - Create Order button clicked
+2024-08-09 11:35:40 - Login successful and page loaded
+2024-08-09 11:35:40 - Create Order button clicked
+2024-08-09 11:42:05 - Login successful and page loaded
+2024-08-09 11:42:05 - Create Order button clicked
+2024-08-09 11:44:52 - Login successful and page loaded
+2024-08-09 11:44:52 - Create Order button clicked
+2024-08-09 11:47:25 - Login successful and page loaded
+2024-08-09 11:47:25 - Create Order button clicked
+2024-08-09 11:51:28 - Login successful and page loaded
+2024-08-09 11:51:29 - Create Order button clicked
+2024-08-09 11:56:51 - Login successful and page loaded
+2024-08-09 11:56:51 - Create Order button clicked
+2024-08-09 12:00:07 - Login successful and page loaded
+2024-08-09 12:00:08 - Create Order button clicked
+2024-08-09 12:08:50 - Login successful and page loaded
+2024-08-09 12:08:50 - Create Order button clicked
+2024-08-09 12:09:48 - An error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),'Place Order')]"}
+  (Session info: chrome=127.0.6533.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF61B759632+30946]
+	(No symbol) [0x00007FF61B70E3C9]
+	(No symbol) [0x00007FF61B606FDA]
+	(No symbol) [0x00007FF61B65822C]
+	(No symbol) [0x00007FF61B65850C]
+	(No symbol) [0x00007FF61B69DCB7]
+	(No symbol) [0x00007FF61B67CAAF]
+	(No symbol) [0x00007FF61B69B041]
+	(No symbol) [0x00007FF61B67C813]
+	(No symbol) [0x00007FF61B64A6E5]
+	(No symbol) [0x00007FF61B64B021]
+	GetHandleVerifier [0x00007FF61B88F83D+1301229]
+	GetHandleVerifier [0x00007FF61B89BDB7+1351783]
+	GetHandleVerifier [0x00007FF61B892A03+1313971]
+	GetHandleVerifier [0x00007FF61B78DD06+245686]
+	(No symbol) [0x00007FF61B71758F]
+	(No symbol) [0x00007FF61B713804]
+	(No symbol) [0x00007FF61B713992]
+	(No symbol) [0x00007FF61B70A3EF]
+	BaseThreadInitThunk [0x00007FFE98227374+20]
+	RtlUserThreadStart [0x00007FFE9A0DCC91+33]
+
+2024-08-09 12:21:38 - Login successful and page loaded
+2024-08-09 12:21:39 - Create Order button clicked
+2024-08-09 12:23:36 - Login successful and page loaded
+2024-08-09 12:23:37 - Create Order button clicked
+2024-08-09 12:25:18 - Login successful and page loaded
+2024-08-09 12:25:18 - Create Order button clicked
+2024-08-09 12:28:11 - Login successful and page loaded
+2024-08-09 12:28:11 - Create Order button clicked
+2024-08-09 12:42:44 - Login successful and page loaded
+2024-08-09 12:42:44 - Create Order button clicked
+2024-08-09 12:43:32 - An error occurred: make_payment() missing 1 required positional argument: 'driver'
+2024-08-09 12:43:50 - Login successful and page loaded
+2024-08-09 12:43:50 - Create Order button clicked
+2024-08-09 12:47:29 - Login successful and page loaded
+2024-08-09 12:47:29 - Create Order button clicked
+2024-08-09 13:07:37 - Login successful and page loaded
+2024-08-09 13:07:37 - Create Order button clicked
+2024-08-09 13:09:33 - Login successful and page loaded
+2024-08-09 13:09:33 - Create Order button clicked
+2024-08-09 13:31:08 - Login successful and page loaded
+2024-08-09 13:31:08 - Create Order button clicked
+2024-08-09 13:32:20 - An error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),'Place Order')]"}
+  (Session info: chrome=127.0.6533.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF752839632+30946]
+	(No symbol) [0x00007FF7527EE3C9]
+	(No symbol) [0x00007FF7526E6FDA]
+	(No symbol) [0x00007FF75273822C]
+	(No symbol) [0x00007FF75273850C]
+	(No symbol) [0x00007FF75277DCB7]
+	(No symbol) [0x00007FF75275CAAF]
+	(No symbol) [0x00007FF75277B041]
+	(No symbol) [0x00007FF75275C813]
+	(No symbol) [0x00007FF75272A6E5]
+	(No symbol) [0x00007FF75272B021]
+	GetHandleVerifier [0x00007FF75296F83D+1301229]
+	GetHandleVerifier [0x00007FF75297BDB7+1351783]
+	GetHandleVerifier [0x00007FF752972A03+1313971]
+	GetHandleVerifier [0x00007FF75286DD06+245686]
+	(No symbol) [0x00007FF7527F758F]
+	(No symbol) [0x00007FF7527F3804]
+	(No symbol) [0x00007FF7527F3992]
+	(No symbol) [0x00007FF7527EA3EF]
+	BaseThreadInitThunk [0x00007FFE98227374+20]
+	RtlUserThreadStart [0x00007FFE9A0DCC91+33]
+
+2024-08-09 14:24:02 - Login successful and page loaded
+2024-08-09 14:24:03 - Create Order button clicked
+2024-08-09 14:25:46 - Login successful and page loaded
+2024-08-09 14:25:47 - Create Order button clicked
+2024-08-09 14:56:40 - Login successful and page loaded
+2024-08-09 14:56:40 - Create Order button clicked
+2024-08-09 14:58:51 - Login successful and page loaded
+2024-08-09 14:58:52 - Create Order button clicked
+2024-08-09 15:10:15 - Login successful and page loaded
+2024-08-09 15:10:16 - Create Order button clicked

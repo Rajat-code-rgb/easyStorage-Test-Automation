@@ -32,15 +32,15 @@ SELECTED_DAY = '15'
 # SELECTED_TIME = '10'
 CONTAINER_TYPE = "pod" # 'container' or 'pod'
 PAYMENT_TYPE = "CARD"
-PLAN = "POD" # 'Economy-POD' , 'POD' , 'First-Class'
+PLAN = "First-Class" # 'Economy-POD' , 'POD' , 'First-Class'
 # For now it is HARDCODED later will be autofetched from CSV file
 ADD_STORAGE_SETTINGS = {
     "BEDROOM": True,
-    "LIVING ROOM":False,
-    "KITCHEN":False,
-    "Office":False,
+    "LIVING ROOM":True,
+    "KITCHEN":True,
+    "Office":True,
     "Garden-Garage":False,
-    "OTHER":False,
+    "OTHER":True,
     "PRESETS":False,
 
 }
@@ -438,27 +438,32 @@ def select_slot():
 
 def make_payment():
     try:
-        # Wait until the elements are present in the DOM
-        get_card_number_input = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//label[contains(@class,'CardData')]//input[@id='cardnumber']"))
-        )
+        # Finding iframe for card number
+        iframes = driver.find_elements(By.TAG_NAME, 'iframe')
 
-        get_card_number_input.send_keys('4111111111111111')
+        # Helper function to switch to iframe, interact with element, and switch back
+        def interact_with_iframe(iframe_name, element_id, value):
+            for iframe in iframes:
 
-        get_expiry_date_input = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.ID, 'exp-date'))
-        )
-        get_cvv_input = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.ID, 'card-cvv-a5f53132-11c0-4fcf-b8b9-a922effc6a7c'))
-        )
+                if iframe.get_attribute('name') == iframe_name:
+                    
+                    print("--"*50)
+                    print( iframe.get_attribute('name') )
+                    driver.switch_to.frame(iframe)
+                    element = WebDriverWait(driver, 10).until(
+                        EC.presence_of_element_located((By.ID, element_id))
+                    )
+                    element.send_keys(value)
+                    driver.switch_to.default_content()
+                    
 
-        # Input card details
-       
-        get_expiry_date_input.send_keys('0430')
-        get_cvv_input.send_keys('111')
+        # Interact with iframes and fill out the payment form
+        interact_with_iframe('cb-component-number-0', 'cardnumber', '4111111111111111')
+        interact_with_iframe('cb-component-expiry-1', 'exp-date', '0430')
+        interact_with_iframe('cb-component-cvv-2', 'cvc', '043')
 
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(e)
     
 
 
@@ -472,7 +477,7 @@ def place_order():
     time.sleep(10)
     place_order_button =  driver.find_element(By.XPATH, "//button[contains(text(),'Place Order')]") 
     place_order_button.click()
-    time.sleep(10)
+    time.sleep(20)
 
 try:
     get_test_cases()
